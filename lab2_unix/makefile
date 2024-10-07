@@ -1,2 +1,2 @@
-%.exe : %.c
+%.out : %.c
 	gcc -o $@ $^ -lm

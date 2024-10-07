@@ -9,7 +9,7 @@
 #define CHILDREN_COUNT 3
 #define MESS1 "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 #define MESS2 "yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy"
-#define MESS3 "zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz"
+#define MESS3 "zzz"
 
  
 int main(void) {
@@ -28,16 +28,16 @@ int main(void) {
             printf("Error: fork() failed.");
             exit(EXIT_FAILURE);
         } else if (children[i] == 0) {
-            printf("Child %d: pid=%d, ppid=%d, gr=%d\n", i, getpid(), getppid(), getpgrp());
+            // printf("Child %d: pid=%d, ppid=%d, gr=%d\n", i, getpid(), getppid(), getpgrp());
             close(fd[0]); // Close reading end of pipe
-            if (write(fd[1], messages[i], strlen(messages[i])) == -1) {
+            if (write(fd[1], messages[i], strlen(messages[i]) + 1) == -1) {
                 printf("Error: write() for child with id %d failed.", getpid());
                 exit(EXIT_FAILURE);
             }
-            printf("Child %d message sent\n", getpid());
+            // printf("Child %d message sent\n", getpid());
             exit(EXIT_SUCCESS);
         } else {
-            printf("Parent: pid=%d, childpid=%d, gr=%d\n", getpid(), children[i], getpgrp());
+            // printf("Parent: pid=%d, childpid=%d, gr=%d\n", getpid(), children[i], getpgrp());
         }
     }
     int wstatus = 0;
@@ -64,9 +64,26 @@ int main(void) {
     }
 
     close(fd[1]); // Close writing end of pipe
-    char buffer[1024];
-    while (read(fd[0], buffer, sizeof(buffer) - 1) > 0) {
-        printf("Received message: %s\n", buffer);
+    char buffer[256];
+    int count = 1;
+    for (int i = 0; i < CHILDREN_COUNT; i++) {
+        count = read(fd[0], buffer, strlen(messages[i]) + 1);
+        if (count == -1) {
+            printf("Error: read\n");
+            exit(EXIT_FAILURE);
+        }
+        printf("pid %d: %s\n",children[i], buffer);
+    }
+    count = count = read(fd[0], buffer, 1);
+    if (count == -1) {
+        printf("Error: read\n");
+        exit(EXIT_FAILURE);
+    }
+    if (count != 0) {
+        printf("Error: lost data in pipe\n");
+        exit(EXIT_FAILURE);
+    } else {
+        printf("Pipe empty\n");
     }
     exit(EXIT_SUCCESS);
 }

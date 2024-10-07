@@ -6,9 +6,9 @@
 #include <errno.h>
 
 #define CHILDREN_COUNT 3
-#define EXEC1 "forchild1.exe"
-#define EXEC2 "forchild2.exe"
-#define EXEC3 "forchild3.exe"
+#define EXEC1 "forchild1.out"
+#define EXEC2 "forchild2.out"
+#define EXEC3 "forchild3.out"
 
  
 int main(void) {
@@ -21,12 +21,12 @@ int main(void) {
             printf("Error: fork() failed.");
             exit(EXIT_FAILURE);
         } else if (children[i] == 0) {
-            printf("Child %d: pid=%d, ppid=%d, gr=%d\n", i, getpid(), getppid(), getpgrp());
+            // printf("Child %d: pid=%d, ppid=%d, gr=%d\n", i, getpid(), getppid(), getpgrp());
             execl(execs[i], NULL);
-            printf("Error: execl() for child with pid=%d failed.", getpid());
+            // printf("Error: execl() for child with pid=%d failed.", getpid());
             exit(EXIT_FAILURE);
         } else {
-            printf("Parent: pid=%d, childpid=%d, gr=%d\n", getpid(), children[i], getpgrp());
+            // printf("Parent: pid=%d, childpid=%d, gr=%d\n", getpid(), children[i], getpgrp());
         }
     }
     int wstatus = 0;
