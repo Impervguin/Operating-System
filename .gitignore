@@ -55,3 +55,9 @@ dkms.conf
 *.synctex.gz
 *.aux
 *.log
+
+# Vs code
+.vscode
+
+# Temp files
+*.socket
