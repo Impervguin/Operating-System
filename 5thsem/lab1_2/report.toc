@@ -1,0 +1,8 @@
+\babel@toc {russian}{}\relax 
+\contentsline {chapter}{\numberline {1}Функции обработчика прерывания системного таймера}{3}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Unix/Linux}{3}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Windows}{3}{section.1.2}%
+\contentsline {chapter}{\numberline {2}Пересчёт динамических приоритетов}{4}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Unix/Linux}{4}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Windows}{6}{section.2.2}%
+\contentsline {chapter}{СПИСОК ИСПОЛЬЗОВАННЫХ ИСТОЧНИКОВ}{8}{figure.caption.3}%
