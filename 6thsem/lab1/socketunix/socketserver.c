@@ -59,15 +59,19 @@ int main() {
             switch (in.operation)
             {
             case ADD:
+                printf("received %lf + %lf\n", in.a, in.b);
                 out.result = in.a + in.b;
                 break;
             case SUB:
+                printf("received %lf - %lf\n", in.a, in.b);
                 out.result = in.a - in.b;
                 break;
             case MUL:
+             printf("received %lf * %lf\n", in.a, in.b);
                 out.result = in.a * in.b;
                 break;
             case DIV:
+                printf("received %lf / %lf\n", in.a, in.b);
                 if (in.b < 1e-6) {
                     out.error = ZERO_DIVISION_ERROR;
                     break;
