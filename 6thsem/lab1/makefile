@@ -13,6 +13,9 @@ clientunix.out : socketunix/socketclient.c socketunix/socketcs.h
 serverforkinet.out : socketinet/serverfork.c socketinet/rw.h
 	$(CC) -o $@ $(CFLAGS) $^
 
+serverthreadinet.out : socketinet/serverthread.c socketinet/rw.h
+	$(CC) -o $@ $(CFLAGS) $^
+
 clientinet.out : socketinet/client.c socketinet/rw.h
 	$(CC) -o $@ $(CFLAGS) $^
 

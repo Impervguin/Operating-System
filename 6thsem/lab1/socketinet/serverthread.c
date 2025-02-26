@@ -7,7 +7,7 @@
 #include <stdlib.h>
 #include <signal.h>
 #include <sys/sem.h>
-#include <sys/shm.h>
+#include <pthread.h>
 
 #define WRITE_QUEUE 0
 #define READ_QUEUE 1
@@ -16,6 +16,11 @@
 
 #define v 1
 #define p -1
+
+#define THREAD_OK 0
+#define THREAD_EXIT_SUCCESS 1
+#define THREAD_EXIT_FAILURE 2
+#define THREAD_EXIT_ARRAY_FULL 3
 
 struct sembuf start_read[] = {
     {READ_QUEUE, v, 0},
@@ -41,42 +46,50 @@ struct sembuf end_write[] = {
     {ACTIVE_WRITER, p, 0}
 };
 
-int listenfd;
-int *array_counter;
+struct thread_args {
+    int semid;
+    int ppid;
+    int socketfd;
+};
 
-void reader(char *buf, int socketfd, int semid) {
+int listenfd;
+int array_counter = 0;
+char array[ARRAY_SIZE];
+
+int reader(char *buf, int socketfd, int semid) {
     char buffer[ARRAY_SIZE];
     
     int err = semop(semid, start_read, 5);
     if (err == -1) {
         perror("semop\n");
-        exit(EXIT_FAILURE);
+        return THREAD_EXIT_FAILURE;
     }
     memcpy(buffer, buf, sizeof(buffer));
     err = semop(semid, end_read, 1);
     if (err == -1) {
         perror("semop\n");
-        exit(EXIT_FAILURE);
+        return THREAD_EXIT_FAILURE;
     }
     int rc = htonl(OK);
     if (write(socketfd, &rc, sizeof(rc)) == -1) {
         perror("write()");
-        exit(EXIT_FAILURE);
+        return THREAD_EXIT_FAILURE;
     }
     if (write(socketfd, &buffer, sizeof(buffer)) == -1) {
         perror("write()");
-        exit(EXIT_FAILURE);
+        return THREAD_EXIT_FAILURE;
     }
+    return THREAD_OK;
 }
 
 int writer(char *buf, int socketfd, int semid, int index) {
     int rc = OK;
     char result = '\0';
-    int done;
+    int done = THREAD_OK;
     int err = semop(semid, start_write, 5);
     if (err == -1) {
         perror("semop\n");
-        exit(EXIT_FAILURE);
+        return THREAD_EXIT_FAILURE;
     }
     if (index < 0 || index >= ARRAY_SIZE) {
         rc = OUT_OF_RANGE_ERROR;
@@ -85,17 +98,17 @@ int writer(char *buf, int socketfd, int semid, int index) {
     } else {
         result = buf[index];
         buf[index] = ARRAY_ELEMENT_BUSY;
-        (*array_counter)++;
+        array_counter++;
     }
-    if (*array_counter == ARRAY_SIZE) {
-        done = 1;
+    if (array_counter == ARRAY_SIZE) {
+        done = THREAD_EXIT_ARRAY_FULL;
     } else {
         printf("write request, index %d\n", index);
     }
     err = semop(semid, end_write, 1);
     if (err == -1) {
         perror("semop\n");
-        exit(EXIT_FAILURE);
+        return THREAD_EXIT_FAILURE;
     }
     rc = htonl(rc);
     if (write(socketfd, &rc, sizeof(rc)) == -1) {
@@ -108,7 +121,12 @@ int writer(char *buf, int socketfd, int semid, int index) {
     return done;
 }
 
-void childfunc(char *buf, int socketfd, int semid, int ppid) {
+typedef  void * (*threadfunc_t)(void *);
+int threadfunc(void * arg) {
+    struct thread_args *args = (struct thread_args *)arg;
+    int semid = args->semid;
+    int ppid = args->ppid;
+    int socketfd = args->socketfd;
     int size;
     int type;
     for (; (size = read(socketfd, &type, sizeof(type))) > 0; ) {
@@ -118,7 +136,11 @@ void childfunc(char *buf, int socketfd, int semid, int ppid) {
         case READ:
             {
                 printf("read request\n");
-                reader(buf, socketfd, semid);
+                int rc = reader(array, socketfd, semid);
+                if (rc != THREAD_OK) {
+                    close(socketfd);
+                    return rc;
+                }
                 break;
             }
         case WRITE:
@@ -127,17 +149,19 @@ void childfunc(char *buf, int socketfd, int semid, int ppid) {
                 if ((size = read(socketfd, &index, sizeof(index))) < 0) {
                     perror("read()");
                     close(socketfd);
-                    exit(EXIT_FAILURE);
+                    return THREAD_EXIT_FAILURE;
                 } else if (size == 0) {
                     printf("conn closed\n");
                     close(socketfd);
-                    exit(EXIT_FAILURE);
+                    return THREAD_EXIT_SUCCESS;
                 }
-                int done = writer(buf, socketfd, semid, index);
-                if (done) {
-                    kill(ppid, SIGINT);
+                int done = writer(array, socketfd, semid, index);
+                if (done == THREAD_EXIT_ARRAY_FULL) {
                     close(socketfd);
-                    exit(EXIT_SUCCESS);
+                    kill(ppid, SIGINT);
+                } else if (done != THREAD_OK) {
+                    close(socketfd);
+                    return done;
                 }
                 break;
             }
@@ -148,7 +172,7 @@ void childfunc(char *buf, int socketfd, int semid, int ppid) {
                 if (write(socketfd, &err, sizeof(err)) == -1) {
                     perror("write()");
                     close(socketfd);
-                    exit(EXIT_FAILURE);
+                    return THREAD_EXIT_FAILURE;
                 }
             }
             break;
@@ -157,12 +181,12 @@ void childfunc(char *buf, int socketfd, int semid, int ppid) {
     close(socketfd);
     if (size == -1) {
         perror("read()");
-        exit(EXIT_FAILURE);
+        return THREAD_EXIT_FAILURE;
     }
     if (size == 0) {
         printf("Conn closed\n");
     }
-    exit(EXIT_SUCCESS);
+    return THREAD_EXIT_SUCCESS;
 }
 
 void sigint_handler() {
@@ -174,30 +198,14 @@ void sigint_handler() {
     exit(EXIT_SUCCESS);
 }
 
+
 int main() {
-    key_t shmid, semid;
+    key_t semid;
 
-    // Create shared memory segment
-    shmid = shmget(IPC_PRIVATE, getpagesize(), IPC_CREAT | 0666);
-    if (shmid == -1) {
-        perror("shmget");
-        return 1;
-    }
-
-    // Attach shared memory segment to process address space
-    char *buf = shmat(shmid, NULL, 0);
-    if (buf == (void *)-1) {
-        perror("shmat");
-        return 1;
-    }
-    memset(buf, ARRAY_ELEMENT_FREE, ARRAY_SIZE);
+    memset(array, ARRAY_ELEMENT_FREE, ARRAY_SIZE);
     for (int i = 0; i < ARRAY_SIZE; i++) {
-        buf[i] = 'a' + i % 26;
+        array[i] = 'a' + i % 26;
     }
-    array_counter = (int *) buf + ARRAY_SIZE;
-    *array_counter = 0;
-
-    printf("Shared memory segment created and attached.\n");
 
     semid = semget(IPC_PRIVATE, 4, IPC_CREAT | 0666);
     if (semid == -1) {
@@ -252,14 +260,25 @@ int main() {
             perror("accept()");
             exit(EXIT_FAILURE);
         }
-        pid_t pid = fork();
-        if (pid == -1) {
-            perror("fork()");
+        pthread_t thread;
+        struct thread_args *args = malloc(sizeof(struct thread_args));
+        if (args == NULL) {
+            perror("malloc()");
             close(connfd);
-            exit(EXIT_FAILURE);
-        } else if (pid == 0) {
             close(listenfd);
-            childfunc(buf, connfd, semid, getppid());
+            exit(EXIT_FAILURE);
+        }
+        args->semid = semid;
+        args->ppid = getpid();
+        args->socketfd = connfd;
+        pthread_attr_t attr;
+        pthread_attr_init(&attr);
+        pthread_attr_setdetachstate(&attr, PTHREAD_CREATE_DETACHED);
+        int err = pthread_create(&thread, &attr, (threadfunc_t)threadfunc, args);
+        if (err!= 0) {
+            perror("pthread_create()");
+            free(args);
+            close(connfd);
         }
     }
 }

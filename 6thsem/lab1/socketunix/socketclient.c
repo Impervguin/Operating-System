@@ -5,6 +5,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <signal.h>
+#include <time.h>
 #include "socketcs.h"
 
 int socketfd;
@@ -18,6 +19,7 @@ void sigint_handler(int signum) {
 }
 
 int main(int argc, char **argv) {
+    srand(time(NULL));
     if (argc != 4) {
         fprintf(stderr, "Usage: %s <num1> <op> <num2>\n", argv[0]);
         exit(EXIT_FAILURE);
@@ -68,24 +70,31 @@ int main(int argc, char **argv) {
     memset(&sa, 0, sizeof(sa));
     sa.sun_family = AF_UNIX;
     strncpy(sa.sun_path, SOCKET_NAME, sizeof(sa.sun_path) - 1);
-
-    if (sendto(socketfd, &in, sizeof(in), 0, (struct sockaddr *) &sa, sizeof(sa)) == -1) {
-        perror("sendto()");
-        exit(EXIT_FAILURE);
-    }
-    calculate_out out;
-    int size = recvfrom(socketfd, &out, sizeof(out), 0, NULL, NULL);
-    if (size == -1) {
-        perror("recvfrom()");
-        exit(EXIT_FAILURE);
-    } else if (size == 0) {
-        printf("Socket shutdown.\n");
-    } else {
-        if (out.error == OK) {
-        printf("%.2f %c %.2f = %.2f\n", in.a, argv[2][0], in.b, out.result);
-        close(socketfd);
-        exit(EXIT_SUCCESS);
+    
+    for (;;) {
+        double in1, in2;
+        in1 = (double) (rand() % 10000) / 100;
+        in2 = (double) (rand() % 10000) / 100;
+        in.a = in1;
+        in.b = in2;
+        if (sendto(socketfd, &in, sizeof(in), 0, (struct sockaddr *) &sa, sizeof(sa)) == -1) {
+            perror("sendto()");
+            exit(EXIT_FAILURE);
         }
+        calculate_out out;
+        int size = recvfrom(socketfd, &out, sizeof(out), 0, NULL, NULL);
+        if (size == -1) {
+            perror("recvfrom()");
+            exit(EXIT_FAILURE);
+        } else if (size == 0) {
+            printf("Socket shutdown.\n");
+            break;
+        } else {
+            if (out.error == OK) {
+            printf("%.2f %c %.2f = %.2f\n", in.a, argv[2][0], in.b, out.result);
+            }
+        }
+        sleep(1);
     }
 
     if (close(socketfd) == -1) {

@@ -20,89 +20,113 @@ int main(int argc, char **argv) {
     sa.sin_family = AF_INET;
     sa.sin_port = htons(PORT);
     sa.sin_addr.s_addr = INADDR_ANY;
-
     if (connect(socketfd, (struct sockaddr *) &sa, sizeof(sa)) == -1) {
         perror("connect()");
         exit(EXIT_FAILURE);
     }
-    printf("Connect\n");
-    for (;;) {
-        char message[128];
-        rw_in in;
-        in.type = READ;
-        int messize = sprintf(message, "%d %d", in.type, in.index);
 
-        if (write(socketfd, &message, messize) == -1) {
+    for (;;) {
+        int type = htonl(READ);
+        int rc;
+        if (write(socketfd, &type, sizeof(type)) == -1) {
             perror("write()");
             exit(EXIT_FAILURE);
         }
-        struct r_out r_out;
-        int size = read(socketfd, &r_out, sizeof(r_out));
+        
+        int size = read(socketfd, &rc, sizeof(rc));
         if (size == -1) {
             perror("read()");
             exit(EXIT_FAILURE);
         }
+        if (size == 0) {
+            printf("server close connection\n");
+            close(socketfd);
+            exit(EXIT_SUCCESS);
+        }
+        rc = ntohl(rc);
 
-        r_out.error = ntohl(r_out.error);
-        if (size!= sizeof(r_out)) {
-            perror("Invalid format");
+        if (rc != OK) {
+            printf("Error: %d\n", rc);
+            close(socketfd);
             exit(EXIT_FAILURE);
         }
-        if (r_out.error == OK) {
-            printf("Received: %s\n", r_out.arr);
-        } else {
-            printf("Error: %d\n", r_out.error);
-            continue;
+        char arr[ARRAY_SIZE + 1];
+        size = read(socketfd, arr, sizeof(arr));
+        if (size == -1) {
+            perror("read()");
+            exit(EXIT_FAILURE);
         }
+        arr[size] = '\0';
+        if (size == 0) {
+            printf("server close connection\n");
+            close(socketfd);
+            exit(EXIT_SUCCESS);
+        }
+        
+        printf("array: %s\n", arr);
+
         sleep(1);
         
         int freeindex = -1;
-        // for (int i = 0; i < ARRAY_SIZE * 2; i++) {
-        //     int i = rand() % ARRAY_SIZE;
-        //     if (r_out.arr[i] != ARRAY_ELEMENT_BUSY) {
-        //         freeindex = i;
-        //         break;
-        //     }
-        // }
         for (int i = 0; i < ARRAY_SIZE; i++) {
-            if (r_out.arr[i]!= ARRAY_ELEMENT_BUSY) {
+            if (arr[i]!= ARRAY_ELEMENT_BUSY) {
                 freeindex = i;
                 break;
             }
         }
         if (freeindex == -1) {
             printf("No free elements\n");
-            continue;
+            close(socketfd);
+            exit(EXIT_FAILURE);
         }
 
-        in.type = WRITE;
-        in.index = freeindex;
-        messize = sprintf(message, "%d %d", in.type, in.index);
-        printf("%s\n", message);
-
-        if (write(socketfd, &message, messize) == -1) {
+        type = htonl(WRITE);
+        if (write(socketfd, &type, sizeof(type)) == -1) {
             perror("write()");
             exit(EXIT_FAILURE);
         }
-        struct w_out w_out;
-        size = read(socketfd, &w_out, sizeof(w_out));
+        if (write(socketfd, &freeindex, sizeof(freeindex)) == -1) {
+            perror("write()");
+            exit(EXIT_FAILURE);
+        }
+
+        size = read(socketfd, &rc, sizeof(rc));
         if (size == -1) {
             perror("read()");
             exit(EXIT_FAILURE);
         }
-        w_out.error = ntohl(w_out.error);
-        if (size!= sizeof(w_out)) {
-            perror("Invalid format");
+        if (size == 0) {
+            printf("server close connection\n");
+            close(socketfd);
+            exit(EXIT_SUCCESS);
+        }
+        rc = ntohl(rc);
+        if (rc == WRITE_BUSY_ERROR) {
+            printf("element %d already busy\n", freeindex);
+        } else if (rc != OK) {
+            printf("Error: %d\n", rc);
+            close(socketfd);
             exit(EXIT_FAILURE);
-        }
-        if (w_out.error == OK) {
-            printf("Wrote on %d %c\n", freeindex, w_out.result);
-        } else if (w_out.error == WRITE_BUSY_ERROR) {
-            printf("Index %d already busy\n", freeindex);
         } else {
-            printf("Error: %d\n", w_out.error);
+            char result;
+            size = read(socketfd, &result, sizeof(result));
+            if (size == -1) {
+                perror("read()");
+                exit(EXIT_FAILURE);
+            }
+            if (size == 0) {
+                printf("server close connection\n");
+                close(socketfd);
+                exit(EXIT_SUCCESS);
+            }
+            printf("element %d: %c\n", freeindex, result);
         }
-        sleep(1);
+        int useconds = rand() % 3000000;
+        usleep(useconds);
     }
-    close(socketfd);
+    if (close(socketfd) == -1) {
+        perror("close()");
+        exit(EXIT_FAILURE);
+    }
+    exit(EXIT_SUCCESS);
 }
