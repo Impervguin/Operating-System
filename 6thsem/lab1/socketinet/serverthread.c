@@ -71,11 +71,11 @@ int reader(char *buf, int socketfd, int semid) {
         return THREAD_EXIT_FAILURE;
     }
     int rc = htonl(OK);
-    if (write(socketfd, &rc, sizeof(rc)) == -1) {
+    if (send(socketfd, &rc, sizeof(rc), 0) == -1) {
         perror("write()");
         return THREAD_EXIT_FAILURE;
     }
-    if (write(socketfd, &buffer, sizeof(buffer)) == -1) {
+    if (send(socketfd, &buffer, sizeof(buffer), 0) == -1) {
         perror("write()");
         return THREAD_EXIT_FAILURE;
     }
@@ -93,11 +93,11 @@ int writer(char *buf, int socketfd, int semid, int index) {
     }
     if (index < 0 || index >= ARRAY_SIZE) {
         rc = OUT_OF_RANGE_ERROR;
-    } else if (buf[index] == ARRAY_ELEMENT_BUSY) {
-        rc = WRITE_BUSY_ERROR;
+    } else if (buf[index] == ARRAY_ELEMENT_OCCUPIED) {
+        rc = WRITE_OCCUPIED_ERROR;
     } else {
         result = buf[index];
-        buf[index] = ARRAY_ELEMENT_BUSY;
+        buf[index] = ARRAY_ELEMENT_OCCUPIED;
         array_counter++;
     }
     if (array_counter == ARRAY_SIZE) {
@@ -111,11 +111,11 @@ int writer(char *buf, int socketfd, int semid, int index) {
         return THREAD_EXIT_FAILURE;
     }
     rc = htonl(rc);
-    if (write(socketfd, &rc, sizeof(rc)) == -1) {
+    if (send(socketfd, &rc, sizeof(rc), 0) == -1) {
         perror("write()");
     }
     if (result != '\0')
-        if (write(socketfd, &result, sizeof(result)) == -1)
+        if (send(socketfd, &result, sizeof(result), 0) == -1)
             perror("write()");
     
     return done;
@@ -129,7 +129,7 @@ int threadfunc(void * arg) {
     int socketfd = args->socketfd;
     int size;
     int type;
-    for (; (size = read(socketfd, &type, sizeof(type))) > 0; ) {
+    for (; (size = recv(socketfd, &type, sizeof(type), 0)) > 0; ) {
         type = ntohl(type);
         switch (type)
         {
@@ -139,21 +139,21 @@ int threadfunc(void * arg) {
                 int rc = reader(array, socketfd, semid);
                 if (rc != THREAD_OK) {
                     close(socketfd);
-                    return rc;
+                    pthread_exit(NULL);
                 }
                 break;
             }
         case WRITE:
             {
                 int index;
-                if ((size = read(socketfd, &index, sizeof(index))) < 0) {
+                if ((size = recv(socketfd, &index, sizeof(index), 0)) < 0) {
                     perror("read()");
                     close(socketfd);
-                    return THREAD_EXIT_FAILURE;
+                    pthread_exit(NULL);
                 } else if (size == 0) {
                     printf("conn closed\n");
                     close(socketfd);
-                    return THREAD_EXIT_SUCCESS;
+                    pthread_exit(NULL);
                 }
                 int done = writer(array, socketfd, semid, index);
                 if (done == THREAD_EXIT_ARRAY_FULL) {
@@ -161,7 +161,7 @@ int threadfunc(void * arg) {
                     kill(ppid, SIGINT);
                 } else if (done != THREAD_OK) {
                     close(socketfd);
-                    return done;
+                    pthread_exit(NULL);
                 }
                 break;
             }
@@ -169,10 +169,10 @@ int threadfunc(void * arg) {
             {
                 printf("unexpected request\n");
                 int err = htonl(INVALID_OPERATION_ERROR);
-                if (write(socketfd, &err, sizeof(err)) == -1) {
+                if (send(socketfd, &err, sizeof(err), 0) == -1) {
                     perror("write()");
                     close(socketfd);
-                    return THREAD_EXIT_FAILURE;
+                    pthread_exit(NULL);
                 }
             }
             break;
@@ -181,12 +181,12 @@ int threadfunc(void * arg) {
     close(socketfd);
     if (size == -1) {
         perror("read()");
-        return THREAD_EXIT_FAILURE;
+        pthread_exit(NULL);
     }
     if (size == 0) {
         printf("Conn closed\n");
     }
-    return THREAD_EXIT_SUCCESS;
+    pthread_exit(NULL);
 }
 
 void sigint_handler() {
@@ -200,6 +200,7 @@ void sigint_handler() {
 
 
 int main() {
+      pthread_t thread;
     key_t semid;
 
     memset(array, ARRAY_ELEMENT_FREE, ARRAY_SIZE);
@@ -260,7 +261,7 @@ int main() {
             perror("accept()");
             exit(EXIT_FAILURE);
         }
-        pthread_t thread;
+      
         struct thread_args *args = malloc(sizeof(struct thread_args));
         if (args == NULL) {
             perror("malloc()");

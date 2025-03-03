@@ -80,11 +80,11 @@ int writer(char *buf, int socketfd, int semid, int index) {
     }
     if (index < 0 || index >= ARRAY_SIZE) {
         rc = OUT_OF_RANGE_ERROR;
-    } else if (buf[index] == ARRAY_ELEMENT_BUSY) {
-        rc = WRITE_BUSY_ERROR;
+    } else if (buf[index] == ARRAY_ELEMENT_OCCUPIED) {
+        rc = WRITE_OCCUPIED_ERROR;
     } else {
         result = buf[index];
-        buf[index] = ARRAY_ELEMENT_BUSY;
+        buf[index] = ARRAY_ELEMENT_OCCUPIED;
         (*array_counter)++;
     }
     if (*array_counter == ARRAY_SIZE) {
