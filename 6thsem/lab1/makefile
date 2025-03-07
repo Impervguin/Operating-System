@@ -16,6 +16,9 @@ serverforkinet.out : socketinet/serverfork.c socketinet/rw.h
 serverthreadinet.out : socketinet/serverthread.c socketinet/rw.h
 	$(CC) -o $@ $(CFLAGS) $^
 
+serverepollinet.out : socketinet/serverepoll.c socketinet/rw.h
+	$(CC) -o $@ $(CFLAGS) $^
+
 clientinet.out : socketinet/client.c socketinet/rw.h
 	$(CC) -o $@ $(CFLAGS) $^
 

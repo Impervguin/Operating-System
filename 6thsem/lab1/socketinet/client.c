@@ -5,11 +5,19 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <signal.h>
+#include <sys/times.h>
 #include <time.h>
 #include "rw.h"
 
+double get_time() {
+    struct timespec ts;
+    clock_gettime(CLOCK_PROCESS_CPUTIME_ID, &ts);
+    return (double)ts.tv_sec + (double)ts.tv_nsec / 1000000000.0;
+}
+
 int main(int argc, char **argv) {
     srand(time(NULL));
+    double start_time, end_time;
     
     struct sockaddr_in sa;
     memset(&sa, 0, sizeof(sa));
@@ -30,16 +38,17 @@ int main(int argc, char **argv) {
         }
         int type = htonl(READ);
         int rc;
+        start_time = get_time();
         if (send(socketfd, &type, sizeof(type), 0) == -1) {                                                                                                                                                                                                                               
             perror("write()");
             exit(EXIT_FAILURE);
-        }
-        
+        }        
         int size = recv(socketfd, &rc, sizeof(rc), 0);
         if (size == -1) {
             perror("read()");
             exit(EXIT_FAILURE);
         }
+        end_time = get_time();
         if (size == 0) {
             printf("server close connection\n");
             close(socketfd);
@@ -66,6 +75,8 @@ int main(int argc, char **argv) {
         }
         
         printf("array: %s\n", arr);
+        
+        printf("Read time: %.6f\n", end_time - start_time);
 
         sleep(1);
         
@@ -83,6 +94,7 @@ int main(int argc, char **argv) {
         }
 
         type = htonl(WRITE);
+        start_time = get_time();
         if (send(socketfd, &type, sizeof(type), 0) == -1) {
             perror("write()");
             exit(EXIT_FAILURE);
@@ -91,6 +103,7 @@ int main(int argc, char **argv) {
             perror("write()");
             exit(EXIT_FAILURE);
         }
+        end_time = get_time();
 
         size = recv(socketfd, &rc, sizeof(rc), 0);
         if (size == -1) {
@@ -127,6 +140,7 @@ int main(int argc, char **argv) {
             perror("close()");
             exit(EXIT_FAILURE);
         }
+        printf("Write time: %.6f\n", end_time - start_time);
         int useconds = rand() % 3000000;
         usleep(useconds);
     }

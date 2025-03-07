@@ -7,7 +7,7 @@
 #define INVALID_FORMAT_ERROR 3
 #define OUT_OF_RANGE_ERROR 4
 
-#define PORT 9887
+#define PORT 9888
 
 #define READ 0
 #define WRITE 1
