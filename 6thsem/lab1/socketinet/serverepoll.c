@@ -8,6 +8,8 @@
 #include <signal.h>
 #include <sys/sem.h>
 #include <sys/epoll.h>
+#include <sys/times.h>
+#include <time.h>
 
 #define WRITE_QUEUE 0
 #define READ_QUEUE 1
@@ -53,6 +55,10 @@ struct thread_args {
     int ppid;
     int socketfd;
 };
+
+long get_time() {
+    return clock();
+}
 
 int listenfd;
 int array_counter = 0;
@@ -127,8 +133,14 @@ int writer(char *buf, int socketfd, int semid, int index) {
 int usefdfunc(int semid, int socketfd) {
     int size;
     int type;
+    int cpid;
     for (; (size = recv(socketfd, &type, sizeof(type), 0)) > 0; ) {
         type = ntohl(type);
+        if (recv(socketfd, &cpid, sizeof(cpid), 0) < 0) {
+            perror("read()");
+            close(socketfd);
+            return FUNC_EXIT_FAILURE;
+        }
         switch (type)
         {
         case READ:
@@ -200,6 +212,7 @@ void sigint_handler() {
 
 int main() {
     key_t semid;
+    long start_time, end_time;
     struct epoll_event ev, events[MAX_EVENTS];
     int nfds, epollfd;
 
@@ -276,6 +289,8 @@ int main() {
             exit(EXIT_FAILURE);
         }
 
+
+        start_time = get_time();
         for (int n = 0; n < nfds; ++n) {
             if (events[n].data.fd == listenfd) {
                 int connfd = accept(listenfd, NULL, NULL);
@@ -292,6 +307,8 @@ int main() {
                 }
             } else {
                 usefdfunc(semid, events[n].data.fd);
+                end_time = get_time();
+                printf("served %ld jiff\n", end_time - start_time);
             }
         }
 }

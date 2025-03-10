@@ -13,7 +13,7 @@
 #define WRITE 1
 
 #define MAX_MESSAGE_SIZE 4096
-#define ARRAY_SIZE 26
+#define ARRAY_SIZE 256
 #define ARRAY_ELEMENT_OCCUPIED '*'
 #define ARRAY_ELEMENT_FREE '_'
 

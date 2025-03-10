@@ -1,3 +1,4 @@
+#define _GNU_SOURCE
 #include "rw.h"
 #include <sys/socket.h>
 #include <netinet/in.h>
@@ -8,6 +9,9 @@
 #include <signal.h>
 #include <sys/sem.h>
 #include <pthread.h>
+#include <sys/times.h>
+#include <time.h>
+#include <sched.h>
 
 #define WRITE_QUEUE 0
 #define READ_QUEUE 1
@@ -50,11 +54,16 @@ struct thread_args {
     int semid;
     int ppid;
     int socketfd;
+    long start_time;
 };
 
 int listenfd;
 int array_counter = 0;
 char array[ARRAY_SIZE];
+
+long get_time() {
+    return clock();
+}
 
 int reader(char *buf, int socketfd, int semid) {
     char buffer[ARRAY_SIZE];
@@ -123,14 +132,24 @@ int writer(char *buf, int socketfd, int semid, int index) {
 
 typedef  void * (*threadfunc_t)(void *);
 int threadfunc(void * arg) {
+    int cpuId;
     struct thread_args *args = (struct thread_args *)arg;
     int semid = args->semid;
     int ppid = args->ppid;
     int socketfd = args->socketfd;
+    long start_time = args->start_time;
     int size;
     int type;
+    int cpid;
     for (; (size = recv(socketfd, &type, sizeof(type), 0)) > 0; ) {
         type = ntohl(type);
+        if (recv(socketfd, &cpid, sizeof(cpid), 0) < 0) {
+            perror("read()");
+            close(socketfd);
+            pthread_exit(NULL);
+        } 
+        getcpu(&cpuId, NULL);
+        printf("Thread %d, client %d running on cpu %d\n", pthread_self(), cpid, cpuId);
         switch (type)
         {
         case READ:
@@ -178,6 +197,8 @@ int threadfunc(void * arg) {
             break;
         }
     }
+    long end_time = get_time();
+    printf("Served %ld jiff\n" , end_time - start_time);
     close(socketfd);
     if (size == -1) {
         perror("read()");
@@ -200,8 +221,11 @@ void sigint_handler() {
 
 
 int main() {
-      pthread_t thread;
+    pthread_t thread;
     key_t semid;
+    long start_time, end_time;
+    int cpu_num = sysconf(_SC_NPROCESSORS_CONF);
+
 
     memset(array, ARRAY_ELEMENT_FREE, ARRAY_SIZE);
     for (int i = 0; i < ARRAY_SIZE; i++) {
@@ -255,12 +279,17 @@ int main() {
         perror("signal()");
         exit(EXIT_FAILURE);
     }
+    pthread_attr_t attr;
+    pthread_attr_init(&attr);
+    pthread_attr_setdetachstate(&attr, PTHREAD_CREATE_DETACHED);
     for (;;) {
+        start_time = get_time();
         int connfd = accept(listenfd, NULL, NULL);
         if (connfd == -1) {
             perror("accept()");
             exit(EXIT_FAILURE);
         }
+        
       
         struct thread_args *args = malloc(sizeof(struct thread_args));
         if (args == NULL) {
@@ -269,12 +298,11 @@ int main() {
             close(listenfd);
             exit(EXIT_FAILURE);
         }
+        args->start_time = start_time;
         args->semid = semid;
         args->ppid = getpid();
         args->socketfd = connfd;
-        pthread_attr_t attr;
-        pthread_attr_init(&attr);
-        pthread_attr_setdetachstate(&attr, PTHREAD_CREATE_DETACHED);
+        
         int err = pthread_create(&thread, &attr, (threadfunc_t)threadfunc, args);
         if (err!= 0) {
             perror("pthread_create()");
