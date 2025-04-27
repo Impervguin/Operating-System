@@ -1,0 +1,912 @@
+[12358.224780] pid=0 ppid=0 comm=swapper/0 pcomm=swapper/0 state=0 state=R prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=0 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(IDLE,KTHREAD, PF_NO_SETAFFINITY, )
+
+[12358.224792] pid=1 ppid=0 comm=systemd pcomm=swapper/0 state=1 state=S prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=1188195799 stime=1444685838 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, SUPERPRIV, )
+
+[12358.224800] pid=2 ppid=0 comm=kthreadd pcomm=swapper/0 state=1 state=S prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=0 core_occupation=0 utime=0 stime=24083058 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, FORKNOEXEC, NOFREEZE, )
+
+[12358.224809] pid=3 ppid=2 comm=pool_workqueue_ pcomm=kthreadd state=1 state=S prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, FORKNOEXEC, NOFREEZE, )
+
+[12358.224817] pid=4 ppid=2 comm=kworker/R-rcu_g pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.224826] pid=5 ppid=2 comm=kworker/R-sync_ pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.224835] pid=6 ppid=2 comm=kworker/R-kvfre pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.224844] pid=7 ppid=2 comm=kworker/R-slub_ pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.224852] pid=8 ppid=2 comm=kworker/R-netns pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.224861] pid=11 ppid=2 comm=kworker/0:0H pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.224870] pid=14 ppid=2 comm=kworker/R-mm_pe pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.224879] pid=15 ppid=2 comm=rcu_tasks_kthre pcomm=kthreadd state=1026 state=I prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, FORKNOEXEC, NOFREEZE, )
+
+[12358.224886] pid=16 ppid=2 comm=rcu_tasks_rude_ pcomm=kthreadd state=1026 state=I prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, FORKNOEXEC, NOFREEZE, )
+
+[12358.224894] pid=17 ppid=2 comm=rcu_tasks_trace pcomm=kthreadd state=1026 state=I prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, FORKNOEXEC, NOFREEZE, )
+
+[12358.224901] pid=18 ppid=2 comm=ksoftirqd/0 pcomm=kthreadd state=1 state=S prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=5529691 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.224909] pid=19 ppid=2 comm=rcu_preempt pcomm=kthreadd state=1026 state=I prio=98 normal_prio=98 static_prio=120 rt_prio=1 policy=FIFO(1) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=8942904 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, FORKNOEXEC, NOFREEZE, )
+
+[12358.224917] pid=20 ppid=2 comm=rcub/0 pcomm=kthreadd state=1 state=S prio=98 normal_prio=98 static_prio=120 rt_prio=1 policy=FIFO(1) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, FORKNOEXEC, NOFREEZE, )
+
+[12358.224924] pid=21 ppid=2 comm=rcu_exp_par_gp_ pcomm=kthreadd state=1 state=S prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, FORKNOEXEC, NOFREEZE, )
+
+[12358.224932] pid=22 ppid=2 comm=rcu_exp_gp_kthr pcomm=kthreadd state=1 state=S prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=3954225 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, FORKNOEXEC, NOFREEZE, )
+
+[12358.224939] pid=23 ppid=2 comm=migration/0 pcomm=kthreadd state=1 state=S prio=0 normal_prio=0 static_prio=120 rt_prio=99 policy=FIFO(1) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=1158675460 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.224948] pid=24 ppid=2 comm=idle_inject/0 pcomm=kthreadd state=1 state=S prio=49 normal_prio=49 static_prio=120 rt_prio=50 policy=FIFO(1) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.224956] pid=25 ppid=2 comm=cpuhp/0 pcomm=kthreadd state=1 state=S prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=1985773 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.224964] pid=26 ppid=2 comm=cpuhp/2 pcomm=kthreadd state=1 state=S prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.224972] pid=27 ppid=2 comm=idle_inject/2 pcomm=kthreadd state=1 state=S prio=49 normal_prio=49 static_prio=120 rt_prio=50 policy=FIFO(1) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.224980] pid=28 ppid=2 comm=migration/2 pcomm=kthreadd state=1 state=S prio=0 normal_prio=0 static_prio=120 rt_prio=99 policy=FIFO(1) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=1088989311 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.224988] pid=29 ppid=2 comm=ksoftirqd/2 pcomm=kthreadd state=1 state=S prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=3762815 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.224996] pid=31 ppid=2 comm=kworker/2:0H pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.225005] pid=32 ppid=2 comm=cpuhp/4 pcomm=kthreadd state=1 state=S prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.225014] pid=33 ppid=2 comm=idle_inject/4 pcomm=kthreadd state=1 state=S prio=49 normal_prio=49 static_prio=120 rt_prio=50 policy=FIFO(1) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.225022] pid=34 ppid=2 comm=migration/4 pcomm=kthreadd state=1 state=S prio=0 normal_prio=0 static_prio=120 rt_prio=99 policy=FIFO(1) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=1583083720 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.225030] pid=35 ppid=2 comm=ksoftirqd/4 pcomm=kthreadd state=1 state=S prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=7303124 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.225040] pid=37 ppid=2 comm=kworker/4:0H pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.225053] pid=38 ppid=2 comm=cpuhp/6 pcomm=kthreadd state=1 state=S prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.225063] pid=39 ppid=2 comm=idle_inject/6 pcomm=kthreadd state=1 state=S prio=49 normal_prio=49 static_prio=120 rt_prio=50 policy=FIFO(1) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.225071] pid=40 ppid=2 comm=migration/6 pcomm=kthreadd state=1 state=S prio=0 normal_prio=0 static_prio=120 rt_prio=99 policy=FIFO(1) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=2146935777 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.225079] pid=41 ppid=2 comm=ksoftirqd/6 pcomm=kthreadd state=1 state=S prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=96432920 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.225087] pid=43 ppid=2 comm=kworker/6:0H pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.225096] pid=44 ppid=2 comm=cpuhp/8 pcomm=kthreadd state=1 state=S prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.225104] pid=45 ppid=2 comm=idle_inject/8 pcomm=kthreadd state=1 state=S prio=49 normal_prio=49 static_prio=120 rt_prio=50 policy=FIFO(1) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.225112] pid=46 ppid=2 comm=migration/8 pcomm=kthreadd state=1 state=S prio=0 normal_prio=0 static_prio=120 rt_prio=99 policy=FIFO(1) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=1099219040 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.225121] pid=47 ppid=2 comm=ksoftirqd/8 pcomm=kthreadd state=1 state=S prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=7155354 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.225129] pid=49 ppid=2 comm=kworker/8:0H pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.225138] pid=50 ppid=2 comm=cpuhp/10 pcomm=kthreadd state=1 state=S prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=988247 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.225147] pid=51 ppid=2 comm=idle_inject/10 pcomm=kthreadd state=1 state=S prio=49 normal_prio=49 static_prio=120 rt_prio=50 policy=FIFO(1) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.225155] pid=52 ppid=2 comm=migration/10 pcomm=kthreadd state=1 state=S prio=0 normal_prio=0 static_prio=120 rt_prio=99 policy=FIFO(1) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=2489257027 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.225163] pid=53 ppid=2 comm=ksoftirqd/10 pcomm=kthreadd state=1 state=S prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=10750765 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.225171] pid=55 ppid=2 comm=kworker/10:0H pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.225180] pid=56 ppid=2 comm=cpuhp/12 pcomm=kthreadd state=1 state=S prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.225188] pid=57 ppid=2 comm=idle_inject/12 pcomm=kthreadd state=1 state=S prio=49 normal_prio=49 static_prio=120 rt_prio=50 policy=FIFO(1) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.225196] pid=58 ppid=2 comm=migration/12 pcomm=kthreadd state=1 state=S prio=0 normal_prio=0 static_prio=120 rt_prio=99 policy=FIFO(1) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=1499870705 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.225216] pid=59 ppid=2 comm=ksoftirqd/12 pcomm=kthreadd state=1 state=S prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=3966014 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.225225] pid=61 ppid=2 comm=kworker/12:0H pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.225233] pid=62 ppid=2 comm=cpuhp/14 pcomm=kthreadd state=1 state=S prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=1988427 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.225241] pid=63 ppid=2 comm=idle_inject/14 pcomm=kthreadd state=1 state=S prio=49 normal_prio=49 static_prio=120 rt_prio=50 policy=FIFO(1) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.225250] pid=64 ppid=2 comm=migration/14 pcomm=kthreadd state=1 state=S prio=0 normal_prio=0 static_prio=120 rt_prio=99 policy=FIFO(1) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=1027275970 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.225258] pid=65 ppid=2 comm=ksoftirqd/14 pcomm=kthreadd state=1 state=S prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=2734176 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.225266] pid=67 ppid=2 comm=kworker/14:0H pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.225275] pid=68 ppid=2 comm=cpuhp/1 pcomm=kthreadd state=1 state=S prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.225283] pid=69 ppid=2 comm=idle_inject/1 pcomm=kthreadd state=1 state=S prio=49 normal_prio=49 static_prio=120 rt_prio=50 policy=FIFO(1) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.225291] pid=70 ppid=2 comm=migration/1 pcomm=kthreadd state=1 state=S prio=0 normal_prio=0 static_prio=120 rt_prio=99 policy=FIFO(1) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=372098608 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.225299] pid=71 ppid=2 comm=ksoftirqd/1 pcomm=kthreadd state=1 state=S prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=2277945 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.225307] pid=73 ppid=2 comm=kworker/1:0H pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.225316] pid=74 ppid=2 comm=cpuhp/3 pcomm=kthreadd state=1 state=S prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.225324] pid=75 ppid=2 comm=idle_inject/3 pcomm=kthreadd state=1 state=S prio=49 normal_prio=49 static_prio=120 rt_prio=50 policy=FIFO(1) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.225332] pid=76 ppid=2 comm=migration/3 pcomm=kthreadd state=1 state=S prio=0 normal_prio=0 static_prio=120 rt_prio=99 policy=FIFO(1) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=271117111 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.225340] pid=77 ppid=2 comm=ksoftirqd/3 pcomm=kthreadd state=1 state=S prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=2929801 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.225349] pid=79 ppid=2 comm=kworker/3:0H pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.225358] pid=80 ppid=2 comm=cpuhp/5 pcomm=kthreadd state=1 state=S prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=990191 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.225366] pid=81 ppid=2 comm=idle_inject/5 pcomm=kthreadd state=1 state=S prio=49 normal_prio=49 static_prio=120 rt_prio=50 policy=FIFO(1) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.225375] pid=82 ppid=2 comm=migration/5 pcomm=kthreadd state=1 state=S prio=0 normal_prio=0 static_prio=120 rt_prio=99 policy=FIFO(1) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=629023586 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.225383] pid=83 ppid=2 comm=ksoftirqd/5 pcomm=kthreadd state=1 state=S prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=1988418 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.225391] pid=85 ppid=2 comm=kworker/5:0H pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.225400] pid=86 ppid=2 comm=cpuhp/7 pcomm=kthreadd state=1 state=S prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=999138 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.225408] pid=87 ppid=2 comm=idle_inject/7 pcomm=kthreadd state=1 state=S prio=49 normal_prio=49 static_prio=120 rt_prio=50 policy=FIFO(1) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.225419] pid=88 ppid=2 comm=migration/7 pcomm=kthreadd state=1 state=S prio=0 normal_prio=0 static_prio=120 rt_prio=99 policy=FIFO(1) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=717644455 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.225430] pid=89 ppid=2 comm=ksoftirqd/7 pcomm=kthreadd state=1 state=S prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=3957097 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.225441] pid=91 ppid=2 comm=kworker/7:0H pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.225449] pid=92 ppid=2 comm=cpuhp/9 pcomm=kthreadd state=1 state=S prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=998557 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.225457] pid=93 ppid=2 comm=idle_inject/9 pcomm=kthreadd state=1 state=S prio=49 normal_prio=49 static_prio=120 rt_prio=50 policy=FIFO(1) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.225465] pid=94 ppid=2 comm=migration/9 pcomm=kthreadd state=1 state=S prio=0 normal_prio=0 static_prio=120 rt_prio=99 policy=FIFO(1) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=160953849 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.225474] pid=95 ppid=2 comm=ksoftirqd/9 pcomm=kthreadd state=1 state=S prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=994099 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.225482] pid=97 ppid=2 comm=kworker/9:0H pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.225491] pid=98 ppid=2 comm=cpuhp/11 pcomm=kthreadd state=1 state=S prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.225499] pid=99 ppid=2 comm=idle_inject/11 pcomm=kthreadd state=1 state=S prio=49 normal_prio=49 static_prio=120 rt_prio=50 policy=FIFO(1) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.225507] pid=100 ppid=2 comm=migration/11 pcomm=kthreadd state=1 state=S prio=0 normal_prio=0 static_prio=120 rt_prio=99 policy=FIFO(1) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=992854068 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.225515] pid=101 ppid=2 comm=ksoftirqd/11 pcomm=kthreadd state=1 state=S prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=995001 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.225523] pid=103 ppid=2 comm=kworker/11:0H pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.225532] pid=104 ppid=2 comm=cpuhp/13 pcomm=kthreadd state=1 state=S prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.225540] pid=105 ppid=2 comm=idle_inject/13 pcomm=kthreadd state=1 state=S prio=49 normal_prio=49 static_prio=120 rt_prio=50 policy=FIFO(1) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.225548] pid=106 ppid=2 comm=migration/13 pcomm=kthreadd state=1 state=S prio=0 normal_prio=0 static_prio=120 rt_prio=99 policy=FIFO(1) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=583460575 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.225556] pid=107 ppid=2 comm=ksoftirqd/13 pcomm=kthreadd state=1 state=S prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.225564] pid=109 ppid=2 comm=kworker/13:0H pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.225573] pid=110 ppid=2 comm=cpuhp/15 pcomm=kthreadd state=1 state=S prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=998877 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.225581] pid=111 ppid=2 comm=idle_inject/15 pcomm=kthreadd state=1 state=S prio=49 normal_prio=49 static_prio=120 rt_prio=50 policy=FIFO(1) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.225589] pid=112 ppid=2 comm=migration/15 pcomm=kthreadd state=1 state=S prio=0 normal_prio=0 static_prio=120 rt_prio=99 policy=FIFO(1) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=168913464 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.225597] pid=113 ppid=2 comm=ksoftirqd/15 pcomm=kthreadd state=1 state=S prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=4710375 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.225605] pid=115 ppid=2 comm=kworker/15:0H pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.225614] pid=116 ppid=2 comm=kdevtmpfs pcomm=kthreadd state=1 state=S prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=2984269 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, FORKNOEXEC, SUPERPRIV, NOFREEZE, )
+
+[12358.225623] pid=117 ppid=2 comm=kworker/R-inet_ pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.225632] pid=118 ppid=2 comm=kauditd pcomm=kthreadd state=8193 state=S prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, FORKNOEXEC, )
+
+[12358.225639] pid=119 ppid=2 comm=khungtaskd pcomm=kthreadd state=1 state=S prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, FORKNOEXEC, NOFREEZE, )
+
+[12358.225646] pid=121 ppid=2 comm=oom_reaper pcomm=kthreadd state=8193 state=S prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, FORKNOEXEC, )
+
+[12358.225653] pid=122 ppid=2 comm=kworker/R-write pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.225662] pid=123 ppid=2 comm=kcompactd0 pcomm=kthreadd state=8193 state=S prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=2894847395 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, FORKNOEXEC, )
+
+[12358.225669] pid=124 ppid=2 comm=ksmd pcomm=kthreadd state=8193 state=S prio=125 normal_prio=125 static_prio=125 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, FORKNOEXEC, )
+
+[12358.225676] pid=125 ppid=2 comm=khugepaged pcomm=kthreadd state=8193 state=S prio=139 normal_prio=139 static_prio=139 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=1929621142 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, FORKNOEXEC, )
+
+[12358.225683] pid=126 ppid=2 comm=kworker/R-kinte pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=999639 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.225691] pid=127 ppid=2 comm=kworker/R-kbloc pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.225700] pid=128 ppid=2 comm=kworker/R-blkcg pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.225709] pid=129 ppid=2 comm=irq/9-acpi pcomm=kthreadd state=1 state=S prio=49 normal_prio=49 static_prio=120 rt_prio=50 policy=FIFO(1) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, FORKNOEXEC, NOFREEZE, )
+
+[12358.225717] pid=132 ppid=2 comm=kworker/R-tpm_d pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.225726] pid=133 ppid=2 comm=kworker/R-ata_s pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.225734] pid=134 ppid=2 comm=kworker/R-edac- pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.225743] pid=135 ppid=2 comm=kworker/R-devfr pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.225752] pid=136 ppid=2 comm=watchdogd pcomm=kthreadd state=1 state=S prio=49 normal_prio=49 static_prio=120 rt_prio=50 policy=FIFO(1) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, FORKNOEXEC, NOFREEZE, )
+
+[12358.225759] pid=137 ppid=2 comm=kworker/1:1H pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=22380963 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.225768] pid=138 ppid=2 comm=irq/25-AMD-Vi0- pcomm=kthreadd state=1 state=S prio=49 normal_prio=49 static_prio=120 rt_prio=50 policy=FIFO(1) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, FORKNOEXEC, NOFREEZE, )
+
+[12358.225775] pid=139 ppid=2 comm=irq/26-AMD-Vi0- pcomm=kthreadd state=1 state=S prio=49 normal_prio=49 static_prio=120 rt_prio=50 policy=FIFO(1) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, FORKNOEXEC, NOFREEZE, )
+
+[12358.225782] pid=140 ppid=2 comm=irq/27-AMD-Vi0- pcomm=kthreadd state=1 state=S prio=49 normal_prio=49 static_prio=120 rt_prio=50 policy=FIFO(1) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, FORKNOEXEC, NOFREEZE, )
+
+[12358.225790] pid=141 ppid=2 comm=kworker/6:1 pcomm=kthreadd state=1026 state=I prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=25616059 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.225799] pid=142 ppid=2 comm=kswapd0 pcomm=kthreadd state=1 state=S prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=46900710384 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, KSWAPD, FORKNOEXEC, MEMALLOC, KSWAPD, )
+
+[12358.225808] pid=143 ppid=2 comm=kworker/R-kthro pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.225816] pid=145 ppid=2 comm=irq/36-pciehp pcomm=kthreadd state=1 state=S prio=49 normal_prio=49 static_prio=120 rt_prio=50 policy=FIFO(1) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, FORKNOEXEC, NOFREEZE, )
+
+[12358.225824] pid=146 ppid=2 comm=kworker/R-acpi_ pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.225832] pid=150 ppid=2 comm=scsi_eh_0 pcomm=kthreadd state=1 state=S prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=1000000 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, FORKNOEXEC, NOFREEZE, )
+
+[12358.225840] pid=151 ppid=2 comm=kworker/R-scsi_ pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.225848] pid=152 ppid=2 comm=scsi_eh_1 pcomm=kthreadd state=1 state=S prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=990983 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, FORKNOEXEC, NOFREEZE, )
+
+[12358.225856] pid=153 ppid=2 comm=kworker/R-scsi_ pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=997446 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.225865] pid=154 ppid=2 comm=kworker/3:1 pcomm=kthreadd state=1026 state=I prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=9790113 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.225873] pid=156 ppid=2 comm=kworker/R-mld pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.225882] pid=157 ppid=2 comm=kworker/R-ipv6_ pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.225891] pid=159 ppid=2 comm=kworker/3:1H pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=12575492 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.225900] pid=165 ppid=2 comm=kworker/R-kstrp pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.225908] pid=178 ppid=2 comm=kworker/12:1 pcomm=kthreadd state=1026 state=I prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=13718821 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.225917] pid=179 ppid=2 comm=irq/28-ACPI:Eve pcomm=kthreadd state=1 state=S prio=49 normal_prio=49 static_prio=120 rt_prio=50 policy=FIFO(1) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, FORKNOEXEC, NOFREEZE, )
+
+[12358.225924] pid=180 ppid=2 comm=kworker/0:1H pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=47859874 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.225933] pid=181 ppid=2 comm=irq/29-ACPI:Eve pcomm=kthreadd state=1 state=S prio=49 normal_prio=49 static_prio=120 rt_prio=50 policy=FIFO(1) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, FORKNOEXEC, NOFREEZE, )
+
+[12358.225941] pid=182 ppid=2 comm=irq/30-ACPI:Eve pcomm=kthreadd state=1 state=S prio=49 normal_prio=49 static_prio=120 rt_prio=50 policy=FIFO(1) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=2000000 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, FORKNOEXEC, NOFREEZE, )
+
+[12358.225948] pid=183 ppid=2 comm=irq/31-ACPI:Eve pcomm=kthreadd state=1 state=S prio=49 normal_prio=49 static_prio=120 rt_prio=50 policy=FIFO(1) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, FORKNOEXEC, NOFREEZE, )
+
+[12358.225955] pid=184 ppid=2 comm=irq/32-ACPI:Eve pcomm=kthreadd state=1 state=S prio=49 normal_prio=49 static_prio=120 rt_prio=50 policy=FIFO(1) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, FORKNOEXEC, NOFREEZE, )
+
+[12358.225963] pid=185 ppid=2 comm=irq/33-ACPI:Eve pcomm=kthreadd state=1 state=S prio=49 normal_prio=49 static_prio=120 rt_prio=50 policy=FIFO(1) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, FORKNOEXEC, NOFREEZE, )
+
+[12358.225970] pid=186 ppid=2 comm=irq/34-ACPI:Eve pcomm=kthreadd state=1 state=S prio=49 normal_prio=49 static_prio=120 rt_prio=50 policy=FIFO(1) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, FORKNOEXEC, NOFREEZE, )
+
+[12358.225977] pid=187 ppid=2 comm=irq/35-ACPI:Eve pcomm=kthreadd state=1 state=S prio=49 normal_prio=49 static_prio=120 rt_prio=50 policy=FIFO(1) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, FORKNOEXEC, NOFREEZE, )
+
+[12358.225985] pid=204 ppid=2 comm=kworker/11:1 pcomm=kthreadd state=1026 state=I prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=6942972 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.225993] pid=225 ppid=2 comm=kworker/2:1H pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=67516558 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.226002] pid=234 ppid=2 comm=kworker/8:1H pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=55199132 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.226011] pid=244 ppid=2 comm=kworker/14:1H pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=51648239 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.226020] pid=255 ppid=2 comm=kworker/9:1H pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=23304143 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.226028] pid=256 ppid=2 comm=kworker/4:1H pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=36983005 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.226037] pid=257 ppid=2 comm=kworker/12:1H pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=42751497 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.226046] pid=258 ppid=2 comm=kworker/15:1H pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=19023728 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.226055] pid=259 ppid=2 comm=kworker/7:1H pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=13167638 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.226063] pid=260 ppid=2 comm=kworker/6:1H pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=23340471 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.226072] pid=261 ppid=2 comm=kworker/13:1H pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=9581453 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.226081] pid=262 ppid=2 comm=kworker/10:1H pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=30375196 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.226089] pid=263 ppid=2 comm=kworker/11:1H pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=9636620 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.226098] pid=264 ppid=2 comm=kworker/5:1H pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=19934843 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.226107] pid=268 ppid=2 comm=kworker/R-nvme- pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.226116] pid=269 ppid=2 comm=kworker/R-nvme- pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.226125] pid=270 ppid=2 comm=kworker/R-nvme- pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.226133] pid=271 ppid=2 comm=kworker/R-nvme- pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.226142] pid=275 ppid=2 comm=kworker/9:1 pcomm=kthreadd state=1026 state=I prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=54553180 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.226151] pid=276 ppid=2 comm=kworker/R-amdgp pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.226159] pid=277 ppid=2 comm=kworker/R-ttm pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.226168] pid=278 ppid=2 comm=kworker/R-amdgp pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.226177] pid=279 ppid=2 comm=kworker/R-amdgp pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.226185] pid=280 ppid=2 comm=kworker/R-dm_vb pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.226194] pid=281 ppid=2 comm=card0-crtc0 pcomm=kthreadd state=1 state=S prio=49 normal_prio=49 static_prio=120 rt_prio=50 policy=FIFO(1) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, FORKNOEXEC, NOFREEZE, )
+
+[12358.226208] pid=282 ppid=2 comm=card0-crtc1 pcomm=kthreadd state=1 state=S prio=49 normal_prio=49 static_prio=120 rt_prio=50 policy=FIFO(1) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, FORKNOEXEC, NOFREEZE, )
+
+[12358.226216] pid=283 ppid=2 comm=card0-crtc2 pcomm=kthreadd state=1 state=S prio=49 normal_prio=49 static_prio=120 rt_prio=50 policy=FIFO(1) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, FORKNOEXEC, NOFREEZE, )
+
+[12358.226223] pid=284 ppid=2 comm=card0-crtc3 pcomm=kthreadd state=1 state=S prio=49 normal_prio=49 static_prio=120 rt_prio=50 policy=FIFO(1) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, FORKNOEXEC, NOFREEZE, )
+
+[12358.226231] pid=285 ppid=2 comm=kworker/R-gfx pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.226240] pid=286 ppid=2 comm=kworker/R-comp_ pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.226248] pid=287 ppid=2 comm=kworker/R-comp_ pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.226257] pid=288 ppid=2 comm=kworker/R-comp_ pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.226266] pid=289 ppid=2 comm=kworker/R-comp_ pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.226274] pid=290 ppid=2 comm=kworker/R-comp_ pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=996784 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.226283] pid=291 ppid=2 comm=kworker/R-comp_ pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.226292] pid=292 ppid=2 comm=kworker/R-comp_ pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.226300] pid=293 ppid=2 comm=kworker/R-comp_ pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.226309] pid=294 ppid=2 comm=kworker/R-sdma0 pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.226317] pid=295 ppid=2 comm=kworker/R-vcn_d pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.226326] pid=296 ppid=2 comm=kworker/R-vcn_e pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.226335] pid=297 ppid=2 comm=kworker/R-vcn_e pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.226344] pid=298 ppid=2 comm=kworker/R-jpeg_ pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.226353] pid=378 ppid=2 comm=kworker/R-btrfs pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.226361] pid=379 ppid=2 comm=kworker/R-btrfs pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.226370] pid=380 ppid=2 comm=kworker/R-btrfs pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.226379] pid=381 ppid=2 comm=kworker/R-btrfs pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.226389] pid=382 ppid=2 comm=kworker/R-btrfs pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.226398] pid=383 ppid=2 comm=kworker/R-btrfs pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.226406] pid=384 ppid=2 comm=kworker/R-btrfs pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.226415] pid=385 ppid=2 comm=kworker/R-btrfs pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.226424] pid=386 ppid=2 comm=kworker/R-btrfs pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.226433] pid=387 ppid=2 comm=kworker/R-btrfs pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.226442] pid=388 ppid=2 comm=kworker/R-btrfs pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.226451] pid=389 ppid=2 comm=kworker/R-btrfs pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.226460] pid=390 ppid=2 comm=kworker/R-btrfs pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.226469] pid=391 ppid=2 comm=btrfs-cleaner pcomm=kthreadd state=1 state=S prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, FORKNOEXEC, NOFREEZE, )
+
+[12358.226477] pid=392 ppid=2 comm=btrfs-transacti pcomm=kthreadd state=1 state=S prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=273013107 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, FORKNOEXEC, NOFREEZE, )
+
+[12358.226485] pid=440 ppid=2 comm=psimon pcomm=kthreadd state=1 state=S prio=98 normal_prio=98 static_prio=120 rt_prio=1 policy=FIFO(1) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, FORKNOEXEC, NOFREEZE, )
+
+[12358.226492] pid=452 ppid=1 comm=systemd-journal pcomm=systemd state=0 state=R prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=984146994 stime=1303640578 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, SUPERPRIV, )
+
+[12358.226500] pid=469 ppid=2 comm=kworker/10:2 pcomm=kthreadd state=1026 state=I prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=2967519 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.226509] pid=473 ppid=1 comm=systemd-userdbd pcomm=systemd state=1 state=S prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=17858957 stime=76612460 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, SUPERPRIV, )
+
+[12358.226516] pid=480 ppid=2 comm=psimon pcomm=kthreadd state=1 state=S prio=98 normal_prio=98 static_prio=120 rt_prio=1 policy=FIFO(1) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, FORKNOEXEC, NOFREEZE, )
+
+[12358.226525] pid=500 ppid=1 comm=systemd-resolve pcomm=systemd state=1 state=S prio=136 normal_prio=136 static_prio=136 rt_prio=0 policy=Idle(5) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=119085383612 stime=19477239151 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, SUPERPRIV, )
+
+[12358.226532] pid=501 ppid=1 comm=systemd-timesyn pcomm=systemd state=1 state=S prio=136 normal_prio=136 static_prio=136 rt_prio=0 policy=Idle(5) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=28713266 stime=31622001 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, SUPERPRIV, )
+
+[12358.226540] pid=510 ppid=1 comm=systemd-udevd pcomm=systemd state=1 state=S prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=389963083 stime=593395558 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, SUPERPRIV, )
+
+[12358.226548] pid=512 ppid=2 comm=psimon pcomm=kthreadd state=1 state=S prio=98 normal_prio=98 static_prio=120 rt_prio=1 policy=FIFO(1) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, FORKNOEXEC, NOFREEZE, )
+
+[12358.226556] pid=577 ppid=2 comm=kworker/1:2 pcomm=kthreadd state=1026 state=I prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=1979122 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.226565] pid=582 ppid=2 comm=irq/84-ASUE120B pcomm=kthreadd state=1 state=S prio=49 normal_prio=49 static_prio=120 rt_prio=50 policy=FIFO(1) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=13979088853 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, FORKNOEXEC, NOFREEZE, )
+
+[12358.226574] pid=602 ppid=2 comm=kworker/R-crypt pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.226584] pid=604 ppid=2 comm=kworker/R-cfg80 pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.226593] pid=616 ppid=2 comm=kworker/R-led_w pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.226602] pid=642 ppid=2 comm=napi/phy0-0 pcomm=kthreadd state=1 state=S prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=72440463298 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, FORKNOEXEC, NOFREEZE, )
+
+[12358.226610] pid=643 ppid=2 comm=napi/phy0-0 pcomm=kthreadd state=1 state=S prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=261338706 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, FORKNOEXEC, NOFREEZE, )
+
+[12358.226618] pid=644 ppid=2 comm=napi/phy0-0 pcomm=kthreadd state=1 state=S prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=4338810952 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, FORKNOEXEC, NOFREEZE, )
+
+[12358.226625] pid=654 ppid=2 comm=kworker/R-btrfs pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.226634] pid=655 ppid=2 comm=kworker/R-btrfs pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.226644] pid=656 ppid=2 comm=kworker/R-btrfs pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.226653] pid=657 ppid=2 comm=kworker/R-btrfs pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.226662] pid=658 ppid=2 comm=kworker/R-btrfs pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.226671] pid=659 ppid=2 comm=kworker/R-btrfs pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.226680] pid=660 ppid=2 comm=kworker/R-btrfs pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.226689] pid=661 ppid=2 comm=kworker/R-btrfs pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.226698] pid=662 ppid=2 comm=kworker/R-btrfs pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.226707] pid=663 ppid=2 comm=kworker/R-btrfs pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.226716] pid=664 ppid=2 comm=kworker/R-btrfs pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.226725] pid=665 ppid=2 comm=kworker/R-btrfs pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.226734] pid=666 ppid=2 comm=kworker/R-btrfs pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.226743] pid=670 ppid=2 comm=btrfs-cleaner pcomm=kthreadd state=1 state=S prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=1000000 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, FORKNOEXEC, NOFREEZE, )
+
+[12358.226751] pid=671 ppid=2 comm=btrfs-transacti pcomm=kthreadd state=1 state=S prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=2476386395 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, FORKNOEXEC, NOFREEZE, )
+
+[12358.226759] pid=710 ppid=2 comm=kworker/R-zswap pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.226768] pid=716 ppid=1 comm=dbus-broker-lau pcomm=systemd state=1 state=S prio=130 normal_prio=130 static_prio=130 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=36121385 stime=23211807 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, SUPERPRIV, )
+
+[12358.226775] pid=717 ppid=716 comm=dbus-broker pcomm=dbus-broker-lau state=1 state=S prio=130 normal_prio=130 static_prio=130 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=780638323 stime=786627564 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, SUPERPRIV, )
+
+[12358.226783] pid=718 ppid=1 comm=ananicy-cpp pcomm=systemd state=8193 state=S prio=115 normal_prio=115 static_prio=115 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=34397974 stime=42548516 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, SUPERPRIV, )
+
+[12358.226790] pid=719 ppid=1 comm=NetworkManager pcomm=systemd state=1 state=S prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=3308622278 stime=2628257377 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, SUPERPRIV, )
+
+[12358.226797] pid=721 ppid=1 comm=avahi-daemon pcomm=systemd state=1 state=S prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=508976886489 stime=53549576404 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, SUPERPRIV, )
+
+[12358.226804] pid=722 ppid=1 comm=bluetoothd pcomm=systemd state=1 state=S prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=20650066 stime=34467964 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, SUPERPRIV, )
+
+[12358.226811] pid=723 ppid=1 comm=systemd-logind pcomm=systemd state=1 state=S prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=233689064 stime=591351616 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, SUPERPRIV, )
+
+[12358.226818] pid=726 ppid=721 comm=avahi-daemon pcomm=avahi-daemon state=8193 state=S prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, FORKNOEXEC, )
+
+[12358.226826] pid=753 ppid=1 comm=cupsd pcomm=systemd state=1 state=S prio=136 normal_prio=136 static_prio=136 rt_prio=0 policy=Idle(5) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=19663372 stime=19722417 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, SUPERPRIV, )
+
+[12358.226834] pid=754 ppid=1 comm=OutlineProxyCon pcomm=systemd state=1 state=S prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=2970745 stime=15546577 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, SUPERPRIV, )
+
+[12358.226841] pid=766 ppid=1 comm=gdm pcomm=systemd state=1 state=S prio=130 normal_prio=130 static_prio=130 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=23494199 stime=16673681 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, SUPERPRIV, )
+
+[12358.226848] pid=768 ppid=1 comm=containerd pcomm=systemd state=8193 state=S prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=11814098 stime=37349146 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, SUPERPRIV, )
+
+[12358.226855] pid=784 ppid=1 comm=colord pcomm=systemd state=1 state=S prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=70934693 stime=52814677 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, SUPERPRIV, )
+
+[12358.226862] pid=796 ppid=1 comm=accounts-daemon pcomm=systemd state=1 state=S prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=44345473 stime=44010196 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, SUPERPRIV, )
+
+[12358.226870] pid=828 ppid=1 comm=dockerd pcomm=systemd state=8193 state=S prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=153408765 stime=554568863 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, SUPERPRIV, )
+
+[12358.226877] pid=829 ppid=1 comm=polkitd pcomm=systemd state=1 state=S prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=656707221 stime=658020177 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, SUPERPRIV, )
+
+[12358.226884] pid=830 ppid=2 comm=mt76-tx phy0 pcomm=kthreadd state=1 state=S prio=98 normal_prio=98 static_prio=120 rt_prio=1 policy=FIFO(1) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=2192497124 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, FORKNOEXEC, NOFREEZE, )
+
+[12358.226892] pid=902 ppid=1 comm=wpa_supplicant pcomm=systemd state=1 state=S prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=1034877369 stime=1090795588 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, SUPERPRIV, )
+
+[12358.226899] pid=1044 ppid=1 comm=rtkit-daemon pcomm=systemd state=1 state=S prio=121 normal_prio=121 static_prio=121 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=23532575 stime=38315882 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, SUPERPRIV, )
+
+[12358.226906] pid=1081 ppid=2 comm=kworker/11:2 pcomm=kthreadd state=1026 state=I prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.226915] pid=1456 ppid=1 comm=upowerd pcomm=systemd state=1 state=S prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=321580501 stime=1070972106 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, SUPERPRIV, )
+
+[12358.226923] pid=1839 ppid=2 comm=krfcommd pcomm=kthreadd state=1 state=S prio=110 normal_prio=110 static_prio=110 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, FORKNOEXEC, SUPERPRIV, NOFREEZE, )
+
+[12358.226931] pid=1905 ppid=1 comm=power-profiles- pcomm=systemd state=1 state=S prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=52546279 stime=82220114 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, SUPERPRIV, )
+
+[12358.226938] pid=1948 ppid=766 comm=gdm-session-wor pcomm=gdm state=1 state=S prio=130 normal_prio=130 static_prio=130 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=15659312 stime=23637613 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, SUPERPRIV, )
+
+[12358.226946] pid=1959 ppid=1 comm=systemd pcomm=systemd state=1 state=S prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=701137408 stime=379174440 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, SUPERPRIV, )
+
+[12358.226953] pid=1961 ppid=1959 comm=(sd-pam) pcomm=systemd state=8193 state=S prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=939937 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, FORKNOEXEC, SUPERPRIV, )
+
+[12358.226961] pid=1971 ppid=1959 comm=gnome-keyring-d pcomm=systemd state=1 state=S prio=130 normal_prio=130 static_prio=130 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=66696425 stime=27239281 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, )
+
+[12358.226967] pid=1977 ppid=1959 comm=dbus-broker-lau pcomm=systemd state=1 state=S prio=130 normal_prio=130 static_prio=130 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=35206625 stime=24072210 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, )
+
+[12358.226973] pid=1978 ppid=1977 comm=dbus-broker pcomm=dbus-broker-lau state=1 state=S prio=130 normal_prio=130 static_prio=130 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=983272830 stime=1367189192 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, )
+
+[12358.226980] pid=1987 ppid=1948 comm=gdm-wayland-ses pcomm=gdm-session-wor state=1 state=S prio=130 normal_prio=130 static_prio=130 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=4938535 stime=5913600 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, SUPERPRIV, )
+
+[12358.226987] pid=1993 ppid=1987 comm=fish pcomm=gdm-wayland-ses state=8193 state=S prio=130 normal_prio=130 static_prio=130 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=42087520 stime=22464501 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, )
+
+[12358.226993] pid=2005 ppid=1993 comm=gnome-session-b pcomm=fish state=1 state=S prio=130 normal_prio=130 static_prio=130 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=24673860 stime=14806408 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, )
+
+[12358.227000] pid=2021 ppid=1959 comm=gnome-session-c pcomm=systemd state=1 state=S prio=130 normal_prio=130 static_prio=130 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=7873911 stime=5840871 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, )
+
+[12358.227006] pid=2023 ppid=1959 comm=gnome-session-b pcomm=systemd state=1 state=S prio=130 normal_prio=130 static_prio=130 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=74425925 stime=64734482 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, )
+
+[12358.227012] pid=2041 ppid=1959 comm=gnome-shell pcomm=systemd state=1 state=S prio=130 normal_prio=130 static_prio=130 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=508479518769 stime=216455357712 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, )
+
+[12358.227019] pid=2047 ppid=1959 comm=gvfsd pcomm=systemd state=1 state=S prio=130 normal_prio=130 static_prio=130 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=35276688 stime=27521154 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, )
+
+[12358.227025] pid=2053 ppid=1959 comm=gvfsd-fuse pcomm=systemd state=8193 state=S prio=130 normal_prio=130 static_prio=130 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=989309 stime=6901936 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, )
+
+[12358.227032] pid=2093 ppid=1959 comm=at-spi-bus-laun pcomm=systemd state=1 state=S prio=130 normal_prio=130 static_prio=130 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=12710848 stime=8787352 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, )
+
+[12358.227038] pid=2099 ppid=2093 comm=dbus-broker-lau pcomm=at-spi-bus-laun state=1 state=S prio=130 normal_prio=130 static_prio=130 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=3942690 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, )
+
+[12358.227045] pid=2100 ppid=2099 comm=dbus-broker pcomm=dbus-broker-lau state=1 state=S prio=130 normal_prio=130 static_prio=130 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=12647387 stime=19620169 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, )
+
+[12358.227053] pid=2101 ppid=1959 comm=at-spi2-registr pcomm=systemd state=1 state=S prio=130 normal_prio=130 static_prio=130 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=22568882 stime=17620719 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, )
+
+[12358.227059] pid=2106 ppid=1959 comm=xdg-permission- pcomm=systemd state=1 state=S prio=130 normal_prio=130 static_prio=130 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=10763660 stime=3943513 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, )
+
+[12358.227065] pid=2110 ppid=1959 comm=gnome-shell-cal pcomm=systemd state=1 state=S prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=34293803 stime=64331811 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, )
+
+[12358.227072] pid=2131 ppid=1959 comm=evolution-sourc pcomm=systemd state=1 state=S prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=174937016 stime=86953674 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, )
+
+[12358.227079] pid=2144 ppid=1959 comm=gjs pcomm=systemd state=1 state=S prio=130 normal_prio=130 static_prio=130 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=202651493 stime=59901327 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, )
+
+[12358.227085] pid=2150 ppid=1959 comm=gsd-a11y-settin pcomm=systemd state=1 state=S prio=130 normal_prio=130 static_prio=130 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=7825834 stime=10807999 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, )
+
+[12358.227092] pid=2151 ppid=1959 comm=gsd-color pcomm=systemd state=1 state=S prio=130 normal_prio=130 static_prio=130 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=124150527 stime=60031097 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, )
+
+[12358.227098] pid=2155 ppid=1959 comm=gsd-datetime pcomm=systemd state=1 state=S prio=130 normal_prio=130 static_prio=130 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=24523105 stime=17583176 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, )
+
+[12358.227104] pid=2156 ppid=1959 comm=gsd-housekeepin pcomm=systemd state=1 state=S prio=130 normal_prio=130 static_prio=130 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=370814283 stime=324363653 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, )
+
+[12358.227110] pid=2158 ppid=1959 comm=gsd-keyboard pcomm=systemd state=1 state=S prio=130 normal_prio=130 static_prio=130 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=82385465 stime=22591326 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, )
+
+[12358.227117] pid=2163 ppid=1959 comm=gsd-media-keys pcomm=systemd state=1 state=S prio=130 normal_prio=130 static_prio=130 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=181764874 stime=49256484 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, )
+
+[12358.227123] pid=2170 ppid=1959 comm=gsd-power pcomm=systemd state=1 state=S prio=130 normal_prio=130 static_prio=130 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=230124997 stime=75703759 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, )
+
+[12358.227129] pid=2172 ppid=2023 comm=evolution-alarm pcomm=gnome-session-b state=1 state=S prio=130 normal_prio=130 static_prio=130 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=221368478 stime=52046285 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, )
+
+[12358.227135] pid=2173 ppid=1959 comm=gsd-print-notif pcomm=systemd state=1 state=S prio=130 normal_prio=130 static_prio=130 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=16649644 stime=21294121 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, )
+
+[12358.227142] pid=2183 ppid=1959 comm=gsd-rfkill pcomm=systemd state=1 state=S prio=130 normal_prio=130 static_prio=130 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=21505641 stime=12755369 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, )
+
+[12358.227148] pid=2186 ppid=1959 comm=gsd-screensaver pcomm=systemd state=1 state=S prio=130 normal_prio=130 static_prio=130 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=11825803 stime=12725929 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, )
+
+[12358.227154] pid=2188 ppid=2023 comm=jetbrains-toolb pcomm=gnome-session-b state=1 state=S prio=130 normal_prio=130 static_prio=130 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=3129806898 stime=308727830 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, )
+
+[12358.227160] pid=2190 ppid=1959 comm=gsd-sharing pcomm=systemd state=1 state=S prio=130 normal_prio=130 static_prio=130 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=260792103 stime=64422126 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, )
+
+[12358.227166] pid=2191 ppid=2023 comm=MathWorksServic pcomm=gnome-session-b state=8193 state=S prio=130 normal_prio=130 static_prio=130 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=209710158 stime=147494510 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, )
+
+[12358.227173] pid=2194 ppid=1959 comm=gsd-smartcard pcomm=systemd state=1 state=S prio=130 normal_prio=130 static_prio=130 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=16695771 stime=9693373 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, )
+
+[12358.227179] pid=2197 ppid=1959 comm=gsd-sound pcomm=systemd state=1 state=S prio=130 normal_prio=130 static_prio=130 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=16728370 stime=13560366 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, )
+
+[12358.227185] pid=2200 ppid=2023 comm=outline-apps pcomm=gnome-session-b state=1 state=S prio=130 normal_prio=130 static_prio=130 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=1283695048 stime=600299452 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, SUPERPRIV, )
+
+[12358.227193] pid=2201 ppid=1959 comm=gsd-usb-protect pcomm=systemd state=1 state=S prio=130 normal_prio=130 static_prio=130 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=14717680 stime=11695004 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, )
+
+[12358.227199] pid=2204 ppid=1959 comm=gsd-wacom pcomm=systemd state=1 state=S prio=130 normal_prio=130 static_prio=130 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=100419815 stime=49177323 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, )
+
+[12358.227228] pid=2212 ppid=2023 comm=gsd-disk-utilit pcomm=gnome-session-b state=1 state=S prio=130 normal_prio=130 static_prio=130 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=4912766 stime=8828666 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, )
+
+[12358.227235] pid=2218 ppid=2023 comm=buttercup pcomm=gnome-session-b state=1 state=S prio=130 normal_prio=130 static_prio=130 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=2727468410 stime=751496843 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, SUPERPRIV, )
+
+[12358.227242] pid=2288 ppid=1959 comm=Buttercup.AppIm pcomm=systemd state=1 state=S prio=130 normal_prio=130 static_prio=130 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=1709927432 stime=315454408 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, FORKNOEXEC, )
+
+[12358.227249] pid=2295 ppid=1959 comm=jetbrains-toolb pcomm=systemd state=1 state=S prio=130 normal_prio=130 static_prio=130 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=1280102654 stime=365733292 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, FORKNOEXEC, )
+
+[12358.227256] pid=2297 ppid=1 comm=udisksd pcomm=systemd state=1 state=S prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=51437439 stime=72654760 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, SUPERPRIV, )
+
+[12358.227264] pid=2298 ppid=1959 comm=Outline.AppImag pcomm=systemd state=1 state=S prio=130 normal_prio=130 static_prio=130 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=1536540806 stime=269296074 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, FORKNOEXEC, )
+
+[12358.227271] pid=2323 ppid=1959 comm=gjs pcomm=systemd state=1 state=S prio=130 normal_prio=130 static_prio=130 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=95221132 stime=35326733 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, )
+
+[12358.227277] pid=2326 ppid=1959 comm=gvfs-udisks2-vo pcomm=systemd state=1 state=S prio=130 normal_prio=130 static_prio=130 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=77841760 stime=63139127 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, )
+
+[12358.227284] pid=2328 ppid=1959 comm=goa-daemon pcomm=systemd state=1 state=S prio=130 normal_prio=130 static_prio=130 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=68788383 stime=31409188 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, )
+
+[12358.227290] pid=2339 ppid=1959 comm=evolution-calen pcomm=systemd state=1 state=S prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=73436641 stime=43922908 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, )
+
+[12358.227296] pid=2365 ppid=1959 comm=goa-identity-se pcomm=systemd state=1 state=S prio=130 normal_prio=130 static_prio=130 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=11749759 stime=12688737 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, )
+
+[12358.227303] pid=2394 ppid=1959 comm=evolution-addre pcomm=systemd state=1 state=S prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=55974858 stime=24524277 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, )
+
+[12358.227309] pid=2451 ppid=1959 comm=gvfs-mtp-volume pcomm=systemd state=1 state=S prio=130 normal_prio=130 static_prio=130 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=9867123 stime=16755334 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, )
+
+[12358.227316] pid=2456 ppid=1959 comm=gvfs-gphoto2-vo pcomm=systemd state=1 state=S prio=130 normal_prio=130 static_prio=130 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=9882972 stime=17685358 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, )
+
+[12358.227322] pid=2462 ppid=1959 comm=gvfs-goa-volume pcomm=systemd state=1 state=S prio=130 normal_prio=130 static_prio=130 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=11822961 stime=10853626 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, )
+
+[12358.227328] pid=2468 ppid=1959 comm=gvfs-afc-volume pcomm=systemd state=1 state=S prio=130 normal_prio=130 static_prio=130 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=9798851 stime=10838939 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, )
+
+[12358.227335] pid=2478 ppid=2200 comm=outline-apps pcomm=outline-apps state=1 state=S prio=130 normal_prio=130 static_prio=130 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=35574757 stime=38396711 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, )
+
+[12358.227341] pid=2479 ppid=2200 comm=outline-apps pcomm=outline-apps state=1 state=S prio=130 normal_prio=130 static_prio=130 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=40436681 stime=32396670 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, SUPERPRIV, )
+
+[12358.227348] pid=2482 ppid=2218 comm=buttercup pcomm=buttercup state=1 state=S prio=130 normal_prio=130 static_prio=130 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=40456308 stime=42279029 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, )
+
+[12358.227355] pid=2483 ppid=2218 comm=buttercup pcomm=buttercup state=1 state=S prio=130 normal_prio=130 static_prio=130 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=37482922 stime=38212176 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, SUPERPRIV, )
+
+[12358.227362] pid=2487 ppid=1959 comm=gsd-printer pcomm=systemd state=1 state=S prio=130 normal_prio=130 static_prio=130 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=25594578 stime=12833619 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, )
+
+[12358.227368] pid=2494 ppid=2479 comm=outline-apps pcomm=outline-apps state=1 state=S prio=130 normal_prio=130 static_prio=130 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=972227 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, FORKNOEXEC, )
+
+[12358.227375] pid=2507 ppid=2483 comm=buttercup pcomm=buttercup state=1 state=S prio=130 normal_prio=130 static_prio=130 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, FORKNOEXEC, )
+
+[12358.227383] pid=2523 ppid=2047 comm=gvfsd-trash pcomm=gvfsd state=1 state=S prio=130 normal_prio=130 static_prio=130 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=20612924 stime=13744790 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, )
+
+[12358.227389] pid=2564 ppid=1959 comm=dconf-service pcomm=systemd state=1 state=S prio=130 normal_prio=130 static_prio=130 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=43579332 stime=21241926 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, )
+
+[12358.227396] pid=2576 ppid=1959 comm=chrome_crashpad pcomm=systemd state=1 state=S prio=136 normal_prio=136 static_prio=136 rt_prio=0 policy=Idle(5) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=986865 stime=992135 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, )
+
+[12358.227402] pid=2595 ppid=1959 comm=pipewire pcomm=systemd state=1 state=S prio=108 normal_prio=108 static_prio=108 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=134613977 stime=155915790 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, )
+
+[12358.227409] pid=2596 ppid=1959 comm=wireplumber pcomm=systemd state=1 state=S prio=108 normal_prio=108 static_prio=108 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=761069449 stime=148272387 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, )
+
+[12358.227415] pid=2597 ppid=1959 comm=pipewire-pulse pcomm=systemd state=1 state=S prio=108 normal_prio=108 static_prio=108 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=202046113 stime=155297695 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, )
+
+[12358.227421] pid=2613 ppid=2041 comm=Xwayland pcomm=gnome-shell state=1 state=S prio=108 normal_prio=108 static_prio=108 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=72413274511 stime=45360766343 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, )
+
+[12358.227428] pid=2650 ppid=1959 comm=xdg-desktop-por pcomm=systemd state=1 state=S prio=130 normal_prio=130 static_prio=130 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=688631956 stime=341844133 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, )
+
+[12358.227435] pid=2661 ppid=1959 comm=xdg-document-po pcomm=systemd state=1 state=S prio=130 normal_prio=130 static_prio=130 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=22540012 stime=20667770 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, )
+
+[12358.227441] pid=2669 ppid=2668 comm=fusermount3 pcomm=fuse mainloop state=8193 state=S prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=978118 stime=985563 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, SUPERPRIV, )
+
+[12358.227448] pid=2675 ppid=1959 comm=xdg-desktop-por pcomm=systemd state=1 state=S prio=130 normal_prio=130 static_prio=130 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=387179054 stime=56204346 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, )
+
+[12358.227455] pid=2732 ppid=1959 comm=gsd-xsettings pcomm=systemd state=1 state=S prio=130 normal_prio=130 static_prio=130 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=219357329 stime=60728331 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, )
+
+[12358.227461] pid=2759 ppid=2041 comm=mutter-x11-fram pcomm=gnome-shell state=1 state=S prio=108 normal_prio=108 static_prio=108 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=130426692350 stime=2620899096 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, )
+
+[12358.227468] pid=2856 ppid=2478 comm=outline-apps pcomm=outline-apps state=1 state=S prio=130 normal_prio=130 static_prio=130 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=285895770 stime=168870872 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, FORKNOEXEC, )
+
+[12358.227475] pid=2867 ppid=2482 comm=buttercup pcomm=buttercup state=1 state=S prio=130 normal_prio=130 static_prio=130 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=545707171 stime=196463005 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, FORKNOEXEC, )
+
+[12358.227482] pid=2889 ppid=2851 comm=outline-apps pcomm=ThreadPoolSingl state=8193 state=S prio=130 normal_prio=130 static_prio=130 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=166482262 stime=115879391 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, )
+
+[12358.227489] pid=2896 ppid=2851 comm=outline-apps pcomm=ThreadPoolSingl state=8193 state=S prio=130 normal_prio=130 static_prio=130 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=1356466015 stime=279502429 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, )
+
+[12358.227496] pid=2897 ppid=1959 comm=xdg-desktop-por pcomm=systemd state=1 state=S prio=130 normal_prio=130 static_prio=130 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=144946072 stime=38486483 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, )
+
+[12358.227502] pid=2941 ppid=2862 comm=buttercup pcomm=ThreadPoolSingl state=8193 state=S prio=130 normal_prio=130 static_prio=130 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=360575053 stime=98994367 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, )
+
+[12358.227509] pid=3064 ppid=2191 comm=MathWorksServic pcomm=MathWorksServic state=8193 state=S prio=130 normal_prio=130 static_prio=130 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=260716525 stime=139467164 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, )
+
+[12358.227515] pid=3084 ppid=1959 comm=localsearch-3 pcomm=systemd state=1 state=S prio=139 normal_prio=139 static_prio=139 rt_prio=0 policy=Idle(5) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=171634883 stime=71948124 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, )
+
+[12358.227522] pid=3279 ppid=1959 comm=gvfsd-metadata pcomm=systemd state=1 state=S prio=130 normal_prio=130 static_prio=130 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=16693274 stime=23478200 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, )
+
+[12358.227528] pid=4254 ppid=2 comm=kworker/13:2 pcomm=kthreadd state=1026 state=I prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.227537] pid=4255 ppid=2 comm=kworker/7:2 pcomm=kthreadd state=1026 state=I prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=9948261 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.227546] pid=4282 ppid=2041 comm=firefox pcomm=gnome-shell state=1 state=S prio=116 normal_prio=116 static_prio=116 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=85365072715 stime=18884751673 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, )
+
+[12358.227553] pid=4382 ppid=4381 comm=Socket Process pcomm=IPC Launch state=1 state=S prio=116 normal_prio=116 static_prio=116 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=49286173 stime=31647595 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, SUPERPRIV, )
+
+[12358.227560] pid=4398 ppid=4381 comm=Privileged Cont pcomm=IPC Launch state=1 state=S prio=116 normal_prio=116 static_prio=116 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=1471505302 stime=452506365 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, SUPERPRIV, )
+
+[12358.227567] pid=4404 ppid=4381 comm=RDD Process pcomm=IPC Launch state=1 state=S prio=116 normal_prio=116 static_prio=116 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=78048535 stime=55846475 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, SUPERPRIV, )
+
+[12358.227574] pid=4464 ppid=4381 comm=WebExtensions pcomm=IPC Launch state=1 state=S prio=116 normal_prio=116 static_prio=116 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=8996357931 stime=1079737474 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, SUPERPRIV, )
+
+[12358.227581] pid=4525 ppid=4381 comm=Utility Process pcomm=IPC Launch state=1 state=S prio=116 normal_prio=116 static_prio=116 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=53039367 stime=79808101 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, SUPERPRIV, )
+
+[12358.227588] pid=4601 ppid=1959 comm=Telegram pcomm=systemd state=1 state=S prio=117 normal_prio=117 static_prio=117 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=100958900700 stime=11699119569 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, )
+
+[12358.227595] pid=5051 ppid=4381 comm=file:// Content pcomm=IPC Launch state=1 state=S prio=116 normal_prio=116 static_prio=116 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=27067333064 stime=7801906511 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, SUPERPRIV, )
+
+[12358.227602] pid=5189 ppid=2 comm=kworker/12:0 pcomm=kthreadd state=1026 state=I prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=22641597 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.227611] pid=5190 ppid=2 comm=kworker/6:0 pcomm=kthreadd state=1026 state=I prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=3945367 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.227620] pid=5259 ppid=2 comm=kworker/8:0 pcomm=kthreadd state=1026 state=I prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=21624740 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.227629] pid=6175 ppid=2 comm=kworker/0:0 pcomm=kthreadd state=1026 state=I prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=33299392 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.227638] pid=7386 ppid=2 comm=kworker/5:0 pcomm=kthreadd state=1026 state=I prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=6913811 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.227647] pid=7503 ppid=2 comm=kworker/3:0 pcomm=kthreadd state=1026 state=I prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.227656] pid=8755 ppid=2 comm=kworker/u65:0 pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=490849530 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.227665] pid=8825 ppid=2 comm=kworker/u64:9 pcomm=kthreadd state=1026 state=I prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=6700682561 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.227674] pid=8900 ppid=2 comm=kworker/14:1 pcomm=kthreadd state=1026 state=I prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=43902993 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.227683] pid=8936 ppid=2 comm=kworker/0:4 pcomm=kthreadd state=1026 state=I prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.227691] pid=9157 ppid=1959 comm=sd_dummy pcomm=systemd state=1 state=S prio=130 normal_prio=130 static_prio=130 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=1961257 stime=4899316 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, )
+
+[12358.227698] pid=9159 ppid=4381 comm=Isolated Web Co pcomm=IPC Launch state=1 state=S prio=116 normal_prio=116 static_prio=116 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=4536905672 stime=513448508 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, SUPERPRIV, )
+
+[12358.227705] pid=9165 ppid=1959 comm=speech-dispatch pcomm=systemd state=1 state=S prio=130 normal_prio=130 static_prio=130 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=972928 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, FORKNOEXEC, )
+
+[12358.227712] pid=9204 ppid=4381 comm=Isolated Web Co pcomm=IPC Launch state=1 state=S prio=116 normal_prio=116 static_prio=116 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=15668476363 stime=595171025 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, SUPERPRIV, )
+
+[12358.227719] pid=9321 ppid=1959 comm=codium pcomm=systemd state=1 state=S prio=116 normal_prio=116 static_prio=116 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=15037312987 stime=2702961956 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, SUPERPRIV, )
+
+[12358.227726] pid=9324 ppid=9321 comm=codium pcomm=codium state=1 state=S prio=116 normal_prio=116 static_prio=116 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=21728310 stime=16813050 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, )
+
+[12358.227732] pid=9325 ppid=9321 comm=codium pcomm=codium state=1 state=S prio=116 normal_prio=116 static_prio=116 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=16859699 stime=15840943 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, SUPERPRIV, )
+
+[12358.227739] pid=9327 ppid=9325 comm=codium pcomm=codium state=1 state=S prio=116 normal_prio=116 static_prio=116 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=981545 stime=6880299 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, FORKNOEXEC, SUPERPRIV, )
+
+[12358.227747] pid=9361 ppid=9324 comm=codium pcomm=codium state=1 state=S prio=119 normal_prio=119 static_prio=119 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=173328218715 stime=41104688442 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, FORKNOEXEC, )
+
+[12358.227754] pid=9365 ppid=9358 comm=codium pcomm=ThreadPoolSingl state=8193 state=S prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=638968031 stime=43595497 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, )
+
+[12358.227760] pid=9421 ppid=9327 comm=codium pcomm=codium state=8193 state=S prio=119 normal_prio=119 static_prio=119 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=130234243321 stime=6757800295 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, FORKNOEXEC, )
+
+[12358.227767] pid=9442 ppid=9358 comm=codium pcomm=ThreadPoolSingl state=8193 state=S prio=116 normal_prio=116 static_prio=116 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=4268407660 stime=1991605642 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, )
+
+[12358.227774] pid=9480 ppid=9358 comm=codium pcomm=ThreadPoolSingl state=8193 state=S prio=116 normal_prio=116 static_prio=116 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=2224005332 stime=446915176 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, )
+
+[12358.227780] pid=9746 ppid=2047 comm=gvfsd-recent pcomm=gvfsd state=1 state=S prio=130 normal_prio=130 static_prio=130 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=24654337 stime=10832741 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, )
+
+[12358.227786] pid=9747 ppid=2047 comm=gvfsd-network pcomm=gvfsd state=1 state=S prio=130 normal_prio=130 static_prio=130 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=110389017 stime=25647242 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, )
+
+[12358.227793] pid=9759 ppid=2047 comm=gvfsd-dnssd pcomm=gvfsd state=1 state=S prio=130 normal_prio=130 static_prio=130 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=145848398 stime=29582534 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, )
+
+[12358.227799] pid=9770 ppid=1959 comm=python3 pcomm=systemd state=1 state=S prio=130 normal_prio=130 static_prio=130 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=1700971007 stime=193728902 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, )
+
+[12358.227806] pid=9810 ppid=9358 comm=codium pcomm=ThreadPoolSingl state=8193 state=S prio=116 normal_prio=116 static_prio=116 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=9534711160 stime=2047474257 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, )
+
+[12358.227812] pid=9819 ppid=9358 comm=codium pcomm=ThreadPoolSingl state=8193 state=S prio=116 normal_prio=116 static_prio=116 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=648046610 stime=169874601 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, )
+
+[12358.227819] pid=9845 ppid=9442 comm=fish pcomm=codium state=8193 state=S prio=116 normal_prio=116 static_prio=116 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=224072204 stime=82692246 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, )
+
+[12358.227825] pid=9913 ppid=9810 comm=cpptools pcomm=codium state=8193 state=S prio=116 normal_prio=116 static_prio=116 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=72893138 stime=61623973 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, )
+
+[12358.227832] pid=9948 ppid=9810 comm=codium pcomm=codium state=1 state=S prio=116 normal_prio=116 static_prio=116 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=210453047 stime=42462901 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, )
+
+[12358.227838] pid=9959 ppid=9810 comm=sm-agent pcomm=codium state=8193 state=S prio=116 normal_prio=116 static_prio=116 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=1961665 stime=18530239 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, )
+
+[12358.227845] pid=10029 ppid=1959 comm=cpptools-srv pcomm=systemd state=8193 state=S prio=116 normal_prio=116 static_prio=116 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=38510182 stime=78923789 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, )
+
+[12358.227852] pid=10577 ppid=2047 comm=gvfsd-wsdd pcomm=gvfsd state=1 state=S prio=130 normal_prio=130 static_prio=130 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=70880081 stime=17788668 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, )
+
+[12358.227858] pid=10588 ppid=2 comm=kworker/13:1 pcomm=kthreadd state=1026 state=I prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.227868] pid=10755 ppid=4381 comm=Isolated Web Co pcomm=IPC Launch state=1 state=S prio=116 normal_prio=116 static_prio=116 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=7660776454 stime=436063157 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, SUPERPRIV, )
+
+[12358.227875] pid=10758 ppid=4381 comm=Isolated Web Co pcomm=IPC Launch state=1 state=S prio=116 normal_prio=116 static_prio=116 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=6909689317 stime=417154584 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, SUPERPRIV, )
+
+[12358.227882] pid=10951 ppid=2 comm=kworker/1:1 pcomm=kthreadd state=1026 state=I prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=993127 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.227891] pid=11040 ppid=2 comm=kworker/15:1 pcomm=kthreadd state=1026 state=I prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.227900] pid=11187 ppid=4381 comm=Isolated Web Co pcomm=IPC Launch state=1 state=S prio=116 normal_prio=116 static_prio=116 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=6294462022 stime=410075176 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, SUPERPRIV, )
+
+[12358.227907] pid=11276 ppid=2 comm=kworker/4:1 pcomm=kthreadd state=1026 state=I prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=979703 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.227916] pid=11318 ppid=4381 comm=Isolated Web Co pcomm=IPC Launch state=1 state=S prio=116 normal_prio=116 static_prio=116 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=154477918798 stime=4495376625 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, SUPERPRIV, )
+
+[12358.227923] pid=11527 ppid=2 comm=kworker/u64:0 pcomm=kthreadd state=1026 state=I prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=4901416935 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.227932] pid=11824 ppid=9442 comm=fish pcomm=codium state=8193 state=S prio=116 normal_prio=116 static_prio=116 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=104246706 stime=37534870 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, )
+
+[12358.227939] pid=12161 ppid=4381 comm=Isolated Web Co pcomm=IPC Launch state=1 state=S prio=116 normal_prio=116 static_prio=116 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=2023678902 stime=398365686 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, SUPERPRIV, )
+
+[12358.227946] pid=12323 ppid=4381 comm=Isolated Web Co pcomm=IPC Launch state=1 state=S prio=116 normal_prio=116 static_prio=116 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=2677774789 stime=223478713 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, SUPERPRIV, )
+
+[12358.227953] pid=12453 ppid=2 comm=kworker/2:2 pcomm=kthreadd state=1026 state=I prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.227962] pid=12875 ppid=2 comm=kworker/u64:4 pcomm=kthreadd state=1026 state=I prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=3080492435 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.227971] pid=13004 ppid=2 comm=kworker/7:1 pcomm=kthreadd state=1026 state=I prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=6973200 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.227980] pid=13486 ppid=1959 comm=nautilus pcomm=systemd state=1 state=S prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=986737867 stime=213138550 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, )
+
+[12358.227986] pid=13565 ppid=1959 comm=gnome-text-edit pcomm=systemd state=1 state=S prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=8580092927 stime=2107188770 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, )
+
+[12358.227993] pid=13919 ppid=2 comm=kworker/4:0 pcomm=kthreadd state=1026 state=I prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.228002] pid=14002 ppid=2 comm=kworker/14:2 pcomm=kthreadd state=1026 state=I prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.228011] pid=14133 ppid=2 comm=kworker/u65:9 pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=110055019 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.228020] pid=14164 ppid=2 comm=kworker/u64:1 pcomm=kthreadd state=1026 state=I prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=1407003873 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.228029] pid=14165 ppid=2 comm=kworker/u64:2 pcomm=kthreadd state=1026 state=I prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=2227843996 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.228038] pid=14310 ppid=2 comm=kworker/5:1 pcomm=kthreadd state=1026 state=I prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.228047] pid=14312 ppid=2 comm=kworker/u64:5 pcomm=kthreadd state=1026 state=I prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=777771348 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.228056] pid=14319 ppid=2 comm=kworker/u64:6 pcomm=kthreadd state=1026 state=I prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=2472528389 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.228065] pid=14364 ppid=2 comm=kworker/8:2 pcomm=kthreadd state=1026 state=I prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=2984502 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.228074] pid=14369 ppid=2 comm=kworker/u65:1 pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=99968644 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.228083] pid=14419 ppid=2 comm=kworker/u65:2 pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=117705089 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.228092] pid=14420 ppid=2 comm=kworker/u65:3 pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=101106313 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.228101] pid=14421 ppid=2 comm=kworker/u65:4 pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=82803946 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.228110] pid=14422 ppid=2 comm=kworker/u65:5 pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=120730440 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.228119] pid=14423 ppid=2 comm=kworker/u65:6 pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=98843459 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.228127] pid=14424 ppid=2 comm=kworker/u65:7 pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=52460710 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.228136] pid=14425 ppid=2 comm=kworker/u65:8 pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=47245367 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.228145] pid=14544 ppid=2 comm=kworker/u65:10 pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=33722826 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.228154] pid=14545 ppid=2 comm=kworker/u65:11 pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=112964186 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.228163] pid=14550 ppid=2 comm=kworker/u65:12 pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=93397932 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.228172] pid=14551 ppid=2 comm=kworker/u65:13 pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=58200948 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.228181] pid=14552 ppid=2 comm=kworker/u65:14 pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=96737469 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.228190] pid=14603 ppid=2 comm=kworker/u64:3 pcomm=kthreadd state=1026 state=I prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=427673004 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.228199] pid=14649 ppid=4381 comm=Isolated Web Co pcomm=IPC Launch state=1 state=S prio=116 normal_prio=116 static_prio=116 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=18520657260 stime=1385637385 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, SUPERPRIV, )
+
+[12358.228209] pid=14692 ppid=2 comm=kworker/u64:7 pcomm=kthreadd state=1026 state=I prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=84202770 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.228218] pid=14698 ppid=2 comm=kworker/u64:8 pcomm=kthreadd state=1026 state=I prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=1111080446 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.228227] pid=14699 ppid=2 comm=kworker/u64:10 pcomm=kthreadd state=1026 state=I prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=580697040 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.228236] pid=14798 ppid=2 comm=kworker/9:0 pcomm=kthreadd state=1026 state=I prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.228245] pid=14854 ppid=2 comm=kworker/2:0 pcomm=kthreadd state=1026 state=I prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=969973 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.228254] pid=14869 ppid=2 comm=kworker/10:1 pcomm=kthreadd state=1026 state=I prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.228263] pid=14948 ppid=4381 comm=Isolated Web Co pcomm=IPC Launch state=1 state=S prio=116 normal_prio=116 static_prio=116 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=1717804927 stime=141882540 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, SUPERPRIV, )
+
+[12358.228270] pid=15022 ppid=4381 comm=Isolated Web Co pcomm=IPC Launch state=1 state=S prio=116 normal_prio=116 static_prio=116 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=229978755 stime=107151291 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, SUPERPRIV, )
+
+[12358.228277] pid=15101 ppid=4381 comm=Isolated Web Co pcomm=IPC Launch state=1 state=S prio=116 normal_prio=116 static_prio=116 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=580306581 stime=79307042 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, SUPERPRIV, )
+
+[12358.228284] pid=15131 ppid=2 comm=kworker/15:0 pcomm=kthreadd state=1026 state=I prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=2978979 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.228293] pid=15164 ppid=4381 comm=Web Content pcomm=IPC Launch state=1 state=S prio=116 normal_prio=116 static_prio=116 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=41540275 stime=37755754 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, SUPERPRIV, )
+
+[12358.228300] pid=15215 ppid=2 comm=kworker/u64:12 pcomm=kthreadd state=1026 state=I prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=179030942 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.228309] pid=15278 ppid=4381 comm=Web Content pcomm=IPC Launch state=1 state=S prio=116 normal_prio=116 static_prio=116 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=44355039 stime=39727229 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, SUPERPRIV, )
+
+[12358.228316] pid=15398 ppid=4381 comm=Web Content pcomm=IPC Launch state=1 state=S prio=116 normal_prio=116 static_prio=116 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=37671107 stime=42582807 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, SUPERPRIV, )
+
+[12358.228323] pid=15445 ppid=2 comm=kworker/u65:15 pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=1967860 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.228332] pid=15446 ppid=2 comm=kworker/u65:16 pcomm=kthreadd state=1026 state=I prio=100 normal_prio=100 static_prio=100 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.228341] pid=15476 ppid=1959 comm=cpptools-srv pcomm=systemd state=8193 state=S prio=116 normal_prio=116 static_prio=116 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=991715 stime=3968650 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, )
+
+[12358.228348] pid=15493 ppid=2 comm=kworker/14:0 pcomm=kthreadd state=1026 state=I prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.228356] pid=15495 ppid=2 comm=kworker/6:2 pcomm=kthreadd state=1026 state=I prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(KTHREAD, WQ_WORKER, FORKNOEXEC, NOFREEZE, PF_NO_SETAFFINITY, )
+
+[12358.228366] pid=15757 ppid=473 comm=systemd-userwor pcomm=systemd-userdbd state=1 state=S prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=9908536 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, SUPERPRIV, )
+
+[12358.228373] pid=15758 ppid=473 comm=systemd-userwor pcomm=systemd-userdbd state=1 state=S prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=2964902 stime=4946160 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, SUPERPRIV, )
+
+[12358.228380] pid=15759 ppid=473 comm=systemd-userwor pcomm=systemd-userdbd state=1 state=S prio=120 normal_prio=120 static_prio=120 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=5958922 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, SUPERPRIV, )
+
+[12358.228387] pid=16131 ppid=11824 comm=sudo pcomm=fish state=1 state=S prio=116 normal_prio=116 static_prio=116 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=8903630 stime=6881789 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, SUPERPRIV, )
+
+[12358.228394] pid=16133 ppid=16131 comm=sudo pcomm=sudo state=1 state=S prio=116 normal_prio=116 static_prio=116 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, FORKNOEXEC, )
+
+[12358.228401] pid=16134 ppid=16133 comm=dmesg pcomm=sudo state=0 state=R prio=116 normal_prio=116 static_prio=116 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=4984252 stime=6959085 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, SUPERPRIV, )
+
+[12358.228408] pid=16174 ppid=9845 comm=sudo pcomm=fish state=1 state=S prio=116 normal_prio=116 static_prio=116 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=8870506 stime=3953032 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, SUPERPRIV, )
+
+[12358.228415] pid=16176 ppid=16174 comm=sudo pcomm=sudo state=1 state=S prio=116 normal_prio=116 static_prio=116 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=0 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, FORKNOEXEC, )
+
+[12358.228422] pid=16177 ppid=16176 comm=insmod pcomm=sudo state=0 state=R prio=116 normal_prio=116 static_prio=116 rt_prio=0 policy=Normal(0) exit_state=No Exit(0) exit_code=0 exit_signal=17 core_occupation=0 utime=0 stime=11898928 pages_to_reclaim=0 migration_disabled=0 migration_flags=0  flags=(RANDOMIZE, SUPERPRIV, )
+

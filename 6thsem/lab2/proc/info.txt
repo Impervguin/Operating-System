@@ -1,0 +1,7 @@
+PID: 132838
+Command line: ./serverthreadinet.out
+CWD: /home/impervguin/Projects/Operating-System/6thsem/lab1
+Executable: /proc/132838/exe
+Root directory: /
+Comm: serverthreadine
+

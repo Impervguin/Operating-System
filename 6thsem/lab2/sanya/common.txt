@@ -1,0 +1,20 @@
+./a.out
+self
+cwd: /home/impervguin/Projects/Operating-System/6thsem/lab2/sanya
+exe: /home/impervguin/Projects/Operating-System/6thsem/lab2/sanya/a.out
+
+FILE DESCRIPTORS
+0 -> /dev/pts/2
+1 -> /dev/pts/2
+2 -> /dev/pts/2
+3 -> /home/impervguin/Projects/Operating-System/6thsem/lab2/sanya/common.txt
+4 -> /home/impervguin/Projects/Operating-System/6thsem/lab2/sanya/environ.txt
+5 -> /home/impervguin/Projects/Operating-System/6thsem/lab2/sanya/maps.txt
+6 -> /home/impervguin/Projects/Operating-System/6thsem/lab2/sanya/mem.txt
+7 -> /home/impervguin/Projects/Operating-System/6thsem/lab2/sanya/pagemap.txt
+8 -> /home/impervguin/Projects/Operating-System/6thsem/lab2/sanya/stat.txt
+9 -> /proc/721739/fd
+root: /
+
+THREADS (User TID -> Kernel TID)
+721739 -> 721739

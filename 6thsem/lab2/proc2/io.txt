@@ -1,0 +1,11 @@
+======IO======
+rchar: 4305
+wchar: 276
+syscr: 19
+syscw: 11
+read_bytes: 0
+write_bytes: 0
+cancelled_write_bytes: 0
+cancelled_write_bytes: 0
+
+==============

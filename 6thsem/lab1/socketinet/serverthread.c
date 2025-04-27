@@ -2,6 +2,7 @@
 #include "rw.h"
 #include <sys/socket.h>
 #include <netinet/in.h>
+#include <arpa/inet.h>
 #include <unistd.h>
 #include <string.h>
 #include <stdio.h>
@@ -141,6 +142,7 @@ int threadfunc(void * arg) {
     int size;
     int type;
     int cpid;
+    sleep(50);
     for (; (size = recv(socketfd, &type, sizeof(type), 0)) > 0; ) {
         type = ntohl(type);
         if (recv(socketfd, &cpid, sizeof(cpid), 0) < 0) {
@@ -197,6 +199,7 @@ int threadfunc(void * arg) {
             break;
         }
     }
+    
     long end_time = get_time();
     printf("Served %ld jiff\n" , end_time - start_time);
     close(socketfd);
@@ -275,6 +278,7 @@ int main() {
         exit(EXIT_FAILURE);
     }
     printf("Server started on port %d.\n", PORT);
+    printf("Server PID: %d\n", getpid());
     if (signal(SIGINT, sigint_handler) == (__sighandler_t) -1) {
         perror("signal()");
         exit(EXIT_FAILURE);

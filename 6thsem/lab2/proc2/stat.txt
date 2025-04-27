@@ -1,0 +1,162 @@
+======Stat======
+pid: 128798
+comm: (server.out)
+state: S
+ppid: 113570
+pgrp: 128798
+session: 113570
+tty_nr: 34816
+tpgid: 128798
+flags: 4194304
+minflt: 110
+cminflt: 0
+majflt: 0
+cmajflt: 0
+utime: 0
+stime: 0
+cutime: 0
+cstime: 0
+priority: 16
+nice: -4
+num_threads: 5
+itrealvalue: 0
+starttime: 750182
+vsize: (330308.00 KB) (82577 pages)
+rss: (1648.00 KB) (412 pages)
+rsslim: 18446744073709551615
+startcode: 0x5c1f515c1000
+endcode: 0x5c1f515c1c79
+startstack: 0x7ffe104ef310
+kstkesp: 0
+kstkeip: 0
+signal: 0
+blocked: 0
+sigignore: 0
+sigcatch: 2
+wchan: 0
+nswap: 0
+cnswap: 0
+exit_signal: 17
+processor: 3
+rt_priority: 0
+policy: 0
+delayacct_blkio_ticks: 0
+guest_time: 0
+cguest_time: 0
+start_data: 0x5c1f515c3dd0
+end_data: 0x5c1f515c417c
+start_brk: 0x5c1f573ce000
+arg_start: 0x7ffe104ef850
+arg_end: 0x7ffe104ef85d
+env_start: 0x7ffe104ef85d
+env_end: 0x7ffe104effeb
+================
+======Status======
+Name:	server.out
+Umask:	0022
+State:	S (sleeping)
+Tgid:	128798
+Ngid:	0
+Pid:	128798
+PPid:	113570
+TracerPid:	0
+Uid:	1000	1000	1000	1000
+Gid:	1000	1000	1000	1000
+FDSize:	128
+Groups:	3 90 981 984 985 987 991 996 998 1000 1001 
+NStgid:	128798
+NSpid:	128798
+NSpgid:	128798
+NSsid:	113570
+Kthread:	0
+VmPeak:	  330308 kB
+VmSize:	  330308 kB
+VmLck:	       0 kB
+VmPin:	       0 kB
+VmHWM:	    1648 kB
+VmRSS:	    1648 kB
+RssAnon:	       0 kB
+RssFile:	    1648 kB
+RssShmem:	       0 kB
+VmData:	   66268 kB
+VmStk:	     132 kB
+VmExe:	       4 kB
+VmLib:	    1696 kB
+VmPTE:	      80 kB
+VmSwap:	       0 kB
+HugetlbPages:	       0 kB
+CoreDumping:	0
+THP_enabled:	1
+untag_mask:	0xffffffffffffffff
+Threads:	5
+SigQ:	0/61061
+SigPnd:	0000000000000000
+ShdPnd:	0000000000000000
+SigBlk:	0000000000000000
+SigIgn:	0000000000000000
+SigCgt:	0000000100000002
+CapInh:	0000000800000000
+CapPrm:	0000000000000000
+CapEff:	0000000000000000
+CapBnd:	000001ffffffffff
+CapAmb:	0000000000000000
+NoNewPrivs:	0
+Seccomp:	0
+Seccomp_filters:	0
+Speculation_Store_Bypass:	thread vulnerable
+SpeculationIndirectBranch:	conditional enabled
+Cpus_allowed:	ffff
+Cpus_allowed_list:	0-15
+Mems_allowed:	00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000001
+Mems_allowed_list:	0
+voluntary_ctxt_switches:	5
+nonvoluntary_ctxt_switches:	0
+x86_Thread_features:	
+x86_Thread_features_locked:	
+x86_Thread_features_locked:	
+
+================
+======Maps======
+address                   n_pages  perms  offset  dev   inode                 pathname
+5c1f515c0000-5c1f515c1000 1 r--p 00000000 00:32 7210996                    /home/impervguin/Projects/Operating-System/aa/server.out 
+5c1f515c1000-5c1f515c2000 1 r-xp 00001000 00:32 7210996                    /home/impervguin/Projects/Operating-System/aa/server.out 
+5c1f515c2000-5c1f515c3000 1 r--p 00002000 00:32 7210996                    /home/impervguin/Projects/Operating-System/aa/server.out 
+5c1f515c3000-5c1f515c4000 1 r--p 00002000 00:32 7210996                    /home/impervguin/Projects/Operating-System/aa/server.out 
+5c1f515c4000-5c1f515c5000 1 rw-p 00003000 00:32 7210996                    /home/impervguin/Projects/Operating-System/aa/server.out 
+5c1f573ce000-5c1f573ef000 33 rw-p 00000000 00:00 0                          [heap] 
+72e43c000000-72e43c021000 33 rw-p 00000000 00:00 0 (null) 
+72e43c021000-72e440000000 16351 ---p 00000000 00:00 0 (null) 
+72e440000000-72e440021000 33 rw-p 00000000 00:00 0 (null) 
+72e440021000-72e444000000 16351 ---p 00000000 00:00 0 (null) 
+72e444000000-72e444021000 33 rw-p 00000000 00:00 0 (null) 
+72e444021000-72e448000000 16351 ---p 00000000 00:00 0 (null) 
+72e448ffd000-72e448ffe000 1 ---p 00000000 00:00 0 (null) 
+72e448ffe000-72e449ffe000 4096 rw-p 00000000 00:00 0 (null) 
+72e449ffe000-72e449fff000 1 ---p 00000000 00:00 0 (null) 
+72e449fff000-72e44afff000 4096 rw-p 00000000 00:00 0 (null) 
+72e44afff000-72e44b000000 1 ---p 00000000 00:00 0 (null) 
+72e44b000000-72e44c000000 4096 rw-p 00000000 00:00 0 (null) 
+72e44c000000-72e44c021000 33 rw-p 00000000 00:00 0 (null) 
+72e44c021000-72e450000000 16351 ---p 00000000 00:00 0 (null) 
+72e450bff000-72e450c00000 1 ---p 00000000 00:00 0 (null) 
+72e450c00000-72e451c00000 4096 rw-p 00000000 00:00 0 (null) 
+72e451c00000-72e451c24000 36 r--p 00000000 00:1b 3987313                    /usr/lib/libc.so.6 
+72e451c24000-72e451d9f000 379 r-xp 00024000 00:1b 3987313                    /usr/lib/libc.so.6 
+72e451d9f000-72e451df2000 83 r--p 0019f000 00:1b 3987313                    /usr/lib/libc.so.6 
+72e451df2000-72e451df6000 4 r--p 001f2000 00:1b 3987313                    /usr/lib/libc.so.6 
+72e451df6000-72e451df8000 2 rw-p 001f6000 00:1b 3987313                    /usr/lib/libc.so.6 
+72e451df8000-72e451e00000 8 rw-p 00000000 00:00 0 (null) 
+72e451ebd000-72e451ec2000 5 rw-p 00000000 00:00 0 (null) 
+72e451eea000-72e451eec000 2 r--p 00000000 00:00 0                          [vvar] 
+72e451eec000-72e451eee000 2 r--p 00000000 00:00 0                          [vvar_vclock] 
+72e451eee000-72e451ef0000 2 r-xp 00000000 00:00 0                          [vdso] 
+72e451ef0000-72e451ef1000 1 r--p 00000000 00:1b 3987304                    /usr/lib/ld-linux-x86-64.so.2 
+72e451ef1000-72e451f1c000 43 r-xp 00001000 00:1b 3987304                    /usr/lib/ld-linux-x86-64.so.2 
+72e451f1c000-72e451f27000 11 r--p 0002c000 00:1b 3987304                    /usr/lib/ld-linux-x86-64.so.2 
+72e451f27000-72e451f29000 2 r--p 00037000 00:1b 3987304                    /usr/lib/ld-linux-x86-64.so.2 
+72e451f29000-72e451f2a000 1 rw-p 00039000 00:1b 3987304                    /usr/lib/ld-linux-x86-64.so.2 
+72e451f2a000-72e451f2b000 1 rw-p 00000000 00:00 0 (null) 
+7ffe104cf000-7ffe104f0000 33 rw-p 00000000 00:00 0                          [stack] 
+ffffffffff600000-ffffffffff601000 1 --xp 00000000 00:00 0                  [vsyscall] 
+total pages: 82577 (330308.000000 KB)
+================

@@ -1,0 +1,7 @@
+PID: 128798
+Command line: ./server.out
+CWD: /home/impervguin/Projects/Operating-System/aa
+Executable: /proc/128798/exe
+Root directory: /
+Comm: server.out
+

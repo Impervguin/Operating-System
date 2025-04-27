@@ -1,0 +1,10 @@
+======File descriptors======
+0 -> /dev/pts/0
+1 -> /dev/pts/0
+2 -> /dev/pts/0
+3 -> socket:[1613503]
+7 -> socket:[1615307]
+58 -> /home/impervguin/.local/share/gnome-shell/session.gvdb
+63 -> /home/impervguin/.local/share/gvfs-metadata/root (deleted)
+65 -> /home/impervguin/.local/share/gvfs-metadata/root-1ffc693a.log (deleted)
+============================

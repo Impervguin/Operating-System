@@ -1,0 +1,27 @@
+address                   n_pages  perms  offset  dev   inode                 pathname
+5845350ef000-5845350f1000  2        r--p  00000000  00:25  7163751                     /home/impervguin/Projects/Operating-System/6thsem/lab2/sanya/a.out
+5845350f1000-5845350f4000  3        r-xp  00002000  00:25  7163751                     /home/impervguin/Projects/Operating-System/6thsem/lab2/sanya/a.out
+5845350f4000-5845350f5000  1        r--p  00005000  00:25  7163751                     /home/impervguin/Projects/Operating-System/6thsem/lab2/sanya/a.out
+5845350f5000-5845350f6000  1        r--p  00005000  00:25  7163751                     /home/impervguin/Projects/Operating-System/6thsem/lab2/sanya/a.out
+5845350f6000-5845350f7000  1        rw-p  00006000  00:25  7163751                     /home/impervguin/Projects/Operating-System/6thsem/lab2/sanya/a.out
+58456791a000-58456793b000  33       rw-p  00000000  00:00  0                           [heap]
+71be09a00000-71be09a24000  36       r--p  00000000  00:1b  3987313                     /usr/lib/libc.so.6
+71be09a24000-71be09b9f000  379      r-xp  00024000  00:1b  3987313                     /usr/lib/libc.so.6
+71be09b9f000-71be09bf2000  83       r--p  0019f000  00:1b  3987313        
+             /usr/lib/libc.so.6
+71be09bf2000-71be09bf6000  4        r--p  001f2000  00:1b  3987313                     /usr/lib/libc.so.6
+71be09bf6000-71be09bf8000  2        rw-p  001f6000  00:1b  3987313                     /usr/lib/libc.so.6
+71be09bf8000-71be09c00000  8        rw-p  00000000  00:00  0  
+71be09c32000-71be09c37000  5        rw-p  00000000  00:00  0  
+71be09c5f000-71be09c61000  2        r--p  00000000  00:00  0                           [vvar]
+71be09c61000-71be09c63000  2        r--p  00000000  00:00  0                           [vvar_vclock]
+71be09c63000-71be09c65000  2        r-xp  00000000  00:00  0                           [vdso]
+71be09c65000-71be09c66000  1        r--p  00000000  00:1b  3987304                     /usr/lib/ld-linux-x86-64.so.2
+71be09c66000-71be09c91000  43       r-xp  00001000  00:1b  3987304                     /usr/lib/ld-linux-x86-64.so.2
+71be09c91000-71be09c9c000  11       r--p  0002c000  00:1b  3987304                     /usr/lib/ld-linux-x86-64.so.2
+71be09c9c000-71be09c9e000  2        r--p  00037000  00:1b  3987304                     /usr/lib/ld-linux-x86-64.so.2
+71be09c9e000-71be09c9f000  1        rw-p  00039000  00:1b  39873  
+04
+71be09c9f000-71be09ca0000  1        rw-p  00000000  00:00  0  
+7ffed28f4000-7ffed2915000  33       rw-p  00000000  00:00  0                           [stack]
+ffffffffff600000-ffffffffff601000  1        --xp  00000000  00:00  0                   [vsyscall]
